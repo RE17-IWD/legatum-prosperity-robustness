@@ -1,0 +1,167 @@
+{
+  "seed": 42,
+  "n_countries": 167,
+  "n_pillars": 12,
+  "M_UA": 10000,
+  "N_sobol": 1024,
+  "baseline_exact": true,
+  "ua": {
+    "dirichlet_flat": {
+      "avg_shift": 5.728988023952096,
+      "rho_med": 0.9872045925360984,
+      "rho_p5": 0.9654476331330456,
+      "tau_med": 0.9124161315922373,
+      "tau_p5": 0.8548012408917106
+    },
+    "dirichlet_conc": {
+      "avg_shift": 0.9708203592814372,
+      "rho_med": 0.9995374998711699,
+      "rho_p5": 0.9987513784822781,
+      "tau_med": 0.9871582136930959,
+      "tau_p5": 0.9767549238871654
+    },
+    "legatum_discrete": {
+      "avg_shift": 2.9299113772455088,
+      "rho_med": 0.9965344697867604,
+      "rho_p5": 0.9897726921372404,
+      "tau_med": 0.9568573695981532,
+      "tau_p5": 0.924659115503932
+    }
+  },
+  "fragile_count": 0,
+  "median_90_range": 22.0,
+  "sobol": [
+    {
+      "input": "w_Personal Freedom",
+      "S1": 0.19536058891725175,
+      "ST": 0.22886107881738438
+    },
+    {
+      "input": "w_Natural Environment",
+      "S1": 0.11132015956796598,
+      "ST": 0.14910943909887642
+    },
+    {
+      "input": "w_Safety and Security",
+      "S1": 0.08026074011204602,
+      "ST": 0.10724850945860477
+    },
+    {
+      "input": "w_Social Capital",
+      "S1": 0.07165107274335497,
+      "ST": 0.09559125876532462
+    },
+    {
+      "input": "aggregation",
+      "S1": 0.046753347799554874,
+      "ST": 0.08562304154149457
+    },
+    {
+      "input": "w_Education",
+      "S1": 0.060826283072624644,
+      "ST": 0.08373611503938377
+    },
+    {
+      "input": "w_Economic Quality",
+      "S1": 0.054691367588035576,
+      "ST": 0.07584360559996682
+    },
+    {
+      "input": "normalization",
+      "S1": 0.02370297410097357,
+      "ST": 0.06813106818954223
+    },
+    {
+      "input": "w_Living Conditions",
+      "S1": 0.043052196781052585,
+      "ST": 0.06765368776962624
+    },
+    {
+      "input": "w_Enterprise Conditions",
+      "S1": 0.04752818009618244,
+      "ST": 0.06542342600301654
+    },
+    {
+      "input": "w_Governance",
+      "S1": 0.045398219478141204,
+      "ST": 0.06381327512597187
+    },
+    {
+      "input": "w_Health",
+      "S1": 0.03808916338698126,
+      "ST": 0.05818927283526888
+    },
+    {
+      "input": "w_Infrastructure and Market Access",
+      "S1": 0.03502295151280221,
+      "ST": 0.05637260201130967
+    },
+    {
+      "input": "w_Investment Environment",
+      "S1": 0.03567055172029876,
+      "ST": 0.05448408817189693
+    }
+  ],
+  "importance": [
+    {
+      "pillar": "Investment Environment",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.10086605946759314
+    },
+    {
+      "pillar": "Infrastructure and Market Access",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.0997388917681608
+    },
+    {
+      "pillar": "Governance",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.09570678971899388
+    },
+    {
+      "pillar": "Education",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.09287025482197439
+    },
+    {
+      "pillar": "Economic Quality",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.09205797216690334
+    },
+    {
+      "pillar": "Living Conditions",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.08967297294005132
+    },
+    {
+      "pillar": "Enterprise Conditions",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.08759590247622516
+    },
+    {
+      "pillar": "Health",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.08008645704952726
+    },
+    {
+      "pillar": "Safety and Security",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.07695926470750157
+    },
+    {
+      "pillar": "Social Capital",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.06552461522511034
+    },
+    {
+      "pillar": "Personal Freedom",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.06526670286180365
+    },
+    {
+      "pillar": "Natural Environment",
+      "nominal_weight": 0.08333333333333333,
+      "importance_share": 0.05365411679615534
+    }
+  ]
+}
