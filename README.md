@@ -1,5 +1,7 @@
 # Robustness and Sensitivity Analysis of the Legatum Prosperity Index
 
+**Authors:** Adrian Erlikhman and Ryan Erlikhman (Los Angeles Center for Enriched Studies)
+
 Replication code for the paper *How Robust Are the Legatum Prosperity Index Rankings? A Monte Carlo and Variance-Based Sensitivity Analysis of Weighting, Normalization, and Aggregation Choices.*
 
 The analysis treats the equal weighting of the index's twelve pillars, the normalization method, and the aggregation function as uncertain inputs, propagates them through 10,000 Monte Carlo draws, and decomposes the variance in each country's rank with first-order and total-effect Sobol' indices. It first verifies that an equal-weighted mean of the published pillar scores reproduces all 167 official 2023 ranks exactly.
@@ -21,6 +23,14 @@ python src/figures.py      # regenerates all five figures and the refined import
 ```
 
 Results are reproducible because a fixed seed (42) is set in both scripts.
+
+To verify reproducibility, run the test suite (requires the dataset in `data/`):
+
+```
+pytest -q
+```
+
+The tests confirm exact baseline replication and the stability of the headline Monte Carlo statistic.
 
 ## What gets produced
 
