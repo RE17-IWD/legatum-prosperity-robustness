@@ -1,6 +1,6 @@
 # Robustness and Sensitivity Analysis of the Legatum Prosperity Index
 
-**Authors:** Adrian Erlikhman and Ryan Erlikhman (Los Angeles Center for Enriched Studies)
+**Authors:** Michael Tarekegn, Adrian Erlikhman, and Ryan Erlikhman (Los Angeles Center for Enriched Studies)
 
 Replication code for the paper *How Robust Are the Legatum Prosperity Index Rankings? A Monte Carlo and Variance-Based Sensitivity Analysis of Weighting, Normalization, and Aggregation Choices.*
 
@@ -22,7 +22,7 @@ python src/analysis.py     # baseline replication, Monte Carlo, Sobol'; writes o
 python src/figures.py      # regenerates all five figures and the refined importance table
 ```
 
-Results are reproducible because a fixed seed (42) is set in both scripts.
+
 
 To verify reproducibility, run the test suite (requires the dataset in `data/`):
 
@@ -30,7 +30,7 @@ To verify reproducibility, run the test suite (requires the dataset in `data/`):
 pytest -q
 ```
 
-The tests confirm exact baseline replication and the stability of the headline Monte Carlo statistic.
+
 
 ## What gets produced
 
