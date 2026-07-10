@@ -3,8 +3,8 @@ import os, json
 import numpy as np, pandas as pd
 from scipy.stats import spearmanr
 import matplotlib; matplotlib.use("Agg")
-import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+import matplotlib.pyplot as plt
 
 SEED=42; rng=np.random.default_rng(SEED)
 OUT=os.path.join(os.path.dirname(__file__), ".."); FIG=os.path.join(OUT, "figures"); YEAR=2023
