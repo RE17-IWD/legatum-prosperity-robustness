@@ -1,6 +1,6 @@
 # Robustness and Sensitivity Analysis of the Legatum Prosperity Index
 
-**Authors:** Michael Tarekegn, Adrian Erlikhman, and Ryan Erlikhman (Los Angeles Center for Enriched Studies)
+**Authors:** Adrian Erlikhman, Micheal Tarekegn, and Ryan Erlikhman (Los Angeles Center for Enriched Studies)
 
 Replication code for the paper *How Robust Are the Legatum Prosperity Index Rankings? A Monte Carlo and Variance-Based Sensitivity Analysis of Weighting, Normalization, and Aggregation Choices.*
 
