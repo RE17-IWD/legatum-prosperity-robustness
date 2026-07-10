@@ -3,7 +3,7 @@
 The Legatum Prosperity Index dataset is **not** included in this repository
 because it is distributed under the Prosperity Institute's terms of use.
 
-To run the analysis, download the file yourself and place it here:
+In order to run the analysis, download the file yourself and place it here:
 
 1. Go to https://index.prosperity.com (Resources / FAQ, "Can I see the actual data used?").
 2. Download `Dataset_Legatum_Prosperity_Index_2023.xlsx`.
