@@ -2,8 +2,8 @@
 Robustness and sensitivity analysis of the Legatum Prosperity Index 2023.
 Reproducible: fixed seed. Produces all numbers/figures used in the paper.
 """
-import numpy as np
 import pandas as pd
+import numpy as np
 from scipy.stats import spearmanr, kendalltau, gmean
 from scipy.stats.qmc import Sobol as QMCSobol
 from SALib.sample import sobol as salib_sample
