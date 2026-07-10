@@ -1,7 +1,7 @@
 # Legatum data is not redistributed (Prosperity Institute terms)
 data/*.xlsx
 data/*.xls
-# intermediate artifacts
+# intermediate artifacts:
 outputs/_*.pkl
 outputs/_*.npy
 __pycache__/
