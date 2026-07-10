@@ -11,8 +11,8 @@ The Legatum dataset must be available (see data/README.md); set LPI_DATA or
 place the file in data/. If the dataset is absent these tests are skipped.
 """
 import os
-import numpy as np
 import pandas as pd
+import numpy as np
 import pytest
 
 YEAR = 2023
