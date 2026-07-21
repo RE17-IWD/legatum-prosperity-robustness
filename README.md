@@ -2,7 +2,7 @@ How Robust Are the Legatum Prosperity Index Rankings?
 
 A Monte Carlo and variance-based sensitivity analysis of weighting, normalization, and aggregation choices in the 2023 Legatum Prosperity Index.
 
-**Authors:**  Adrian Erlikhman, and Ryan Erlikhman
+**Authors:**  Adrian Erlikhman and Ryan Erlikhman
 
 ## Overview
 
