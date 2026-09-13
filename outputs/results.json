@@ -1,0 +1,2483 @@
+{
+ "sha256_2023": "8c789bd5ab881c12005f83e9b0c55ae81a68548dd18d3acb9fff9bec0eef631c",
+ "sha256_2026": "54621ff5d00d0cf4afe6bdbcc47008acff2086cd87cf55c3c8777f819eed1718",
+ "baseline": {
+  "n": 167,
+  "max_abs_score_dev": 5.000799774279585e-11,
+  "ranks_exact": true,
+  "spearman": 1.0,
+  "kendall": 1.0
+ },
+ "ua": {
+  "near_equal": {
+   "avg_shift": 0.9780119760479041,
+   "shift_p5": 0.5742514970059885,
+   "shift_p95": 1.532934131736527,
+   "rho_med": 0.9995619775938658,
+   "rho_p5": 0.9989277469158071,
+   "tau_med": 0.9876632277613449,
+   "tau_p5": 0.9795036433157781
+  },
+  "grid": {
+   "avg_shift": 2.9263101796407187,
+   "shift_p5": 1.7365269461077844,
+   "shift_p95": 4.491017964071856,
+   "rho_med": 0.9965087037628702,
+   "rho_p5": 0.9911339111793626,
+   "tau_med": 0.9563523555299042,
+   "tau_p5": 0.9295361085058799
+  },
+  "uniform": {
+   "avg_shift": 5.683555688622754,
+   "shift_p5": 3.305389221556886,
+   "shift_p95": 9.078443113772446,
+   "rho_med": 0.9899138899481589,
+   "rho_p5": 0.9658394055262969,
+   "tau_med": 0.9219392540220764,
+   "tau_p5": 0.8498737464829378
+  }
+ },
+ "intervals": {
+  "median_width": 22.0,
+  "fragile": 0,
+  "tiers": [
+   {
+    "tier": "1\u201333",
+    "mean": 9.849999999999978,
+    "median": 8.0,
+    "max": 28
+   },
+   {
+    "tier": "34\u201367",
+    "mean": 19.883823529411764,
+    "median": 17.024999999999977,
+    "max": 48
+   },
+   {
+    "tier": "68\u2013100",
+    "mean": 35.39545454545453,
+    "median": 36.0,
+    "max": 52
+   },
+   {
+    "tier": "101\u2013134",
+    "mean": 29.764705882352942,
+    "median": 29.5,
+    "max": 55
+   },
+   {
+    "tier": "135\u2013167",
+    "mean": 19.818181818181817,
+    "median": 20.0,
+    "max": 44
+   }
+  ],
+  "widest": [
+   {
+    "country": "Turkmenistan",
+    "off_rank": 107,
+    "rank_p5": 82.0,
+    "rank_p95": 137.0,
+    "width_90": 55.0,
+    "region": "Central and South Asia"
+   },
+   {
+    "country": "Belarus",
+    "off_rank": 78,
+    "rank_p5": 53.0,
+    "rank_p95": 105.0,
+    "width_90": 52.0,
+    "region": "Eastern Europe"
+   },
+   {
+    "country": "Russia",
+    "off_rank": 77,
+    "rank_p5": 54.0,
+    "rank_p95": 102.0,
+    "width_90": 48.0,
+    "region": "Eastern Europe"
+   },
+   {
+    "country": "China",
+    "off_rank": 54,
+    "rank_p5": 44.0,
+    "rank_p95": 92.0,
+    "width_90": 48.0,
+    "region": "East Asia and Pacific"
+   },
+   {
+    "country": "Saudi Arabia",
+    "off_rank": 79,
+    "rank_p5": 58.0,
+    "rank_p95": 106.0,
+    "width_90": 48.0,
+    "region": "Middle East and North Africa"
+   },
+   {
+    "country": "Turkey",
+    "off_rank": 95,
+    "rank_p5": 72.0,
+    "rank_p95": 119.0,
+    "width_90": 47.0,
+    "region": "Middle East and North Africa"
+   },
+   {
+    "country": "Iran",
+    "off_rank": 126,
+    "rank_p5": 106.0,
+    "rank_p95": 152.0,
+    "width_90": 46.0,
+    "region": "Middle East and North Africa"
+   },
+   {
+    "country": "Colombia",
+    "off_rank": 81,
+    "rank_p5": 61.0,
+    "rank_p95": 106.0,
+    "width_90": 45.0,
+    "region": "Latin America and the Caribbean"
+   }
+  ],
+  "narrowest": [
+   {
+    "country": "Denmark",
+    "off_rank": 1,
+    "rank_p5": 1.0,
+    "rank_p95": 3.0,
+    "width_90": 2.0,
+    "region": "Western Europe"
+   },
+   {
+    "country": "South Sudan",
+    "off_rank": 167,
+    "rank_p5": 165.0,
+    "rank_p95": 167.0,
+    "width_90": 2.0,
+    "region": "Sub-Saharan Africa"
+   },
+   {
+    "country": "Cyprus",
+    "off_rank": 34,
+    "rank_p5": 32.0,
+    "rank_p95": 36.0,
+    "width_90": 4.0,
+    "region": "Western Europe"
+   },
+   {
+    "country": "Norway",
+    "off_rank": 3,
+    "rank_p5": 2.0,
+    "rank_p95": 6.0,
+    "width_90": 4.0,
+    "region": "Western Europe"
+   }
+  ],
+  "named": {
+   "Belarus": {
+    "rank": 78,
+    "lo": 53,
+    "hi": 105
+   },
+   "China": {
+    "rank": 54,
+    "lo": 44,
+    "hi": 92
+   },
+   "Denmark": {
+    "rank": 1,
+    "lo": 1,
+    "hi": 3
+   },
+   "Norway": {
+    "rank": 3,
+    "lo": 2,
+    "hi": 6
+   },
+   "Russia": {
+    "rank": 77,
+    "lo": 54,
+    "hi": 102
+   },
+   "South Sudan": {
+    "rank": 167,
+    "lo": 165,
+    "hi": 167
+   },
+   "Turkmenistan": {
+    "rank": 107,
+    "lo": 82,
+    "hi": 137
+   }
+  }
+ },
+ "sobol": {
+  "n_eval": 131072,
+  "n_eval_small": 16384,
+  "table": [
+   {
+    "input": "Personal Freedom",
+    "S1": 0.19096669216390258,
+    "S1_hw": 0.00892766498941934,
+    "ST": 0.23071431613708834,
+    "ST_hw": 0.007321482665355122,
+    "S1_N1024": 0.19573775640264748,
+    "ST_N1024": 0.22931823721532682,
+    "S1_hw_N1024": 0.025328795359739906,
+    "ST_hw_N1024": 0.022162179989242456
+   },
+   {
+    "input": "Natural Environment",
+    "S1": 0.10702938559774165,
+    "S1_hw": 0.0057519135639109015,
+    "ST": 0.14182275135430183,
+    "ST_hw": 0.005301545674110786,
+    "S1_N1024": 0.11102597368562059,
+    "ST_N1024": 0.1488300996548222,
+    "S1_hw_N1024": 0.017781503071418188,
+    "ST_hw_N1024": 0.01719048523187995
+   },
+   {
+    "input": "Safety and Security",
+    "S1": 0.08137460866778713,
+    "S1_hw": 0.0038966846351711354,
+    "ST": 0.10767870759090589,
+    "ST_hw": 0.003631429843457122,
+    "S1_N1024": 0.07946262414325515,
+    "ST_N1024": 0.10716079838713387,
+    "S1_hw_N1024": 0.011512181642135383,
+    "ST_hw_N1024": 0.011240519103272333
+   },
+   {
+    "input": "Social Capital",
+    "S1": 0.07177255483914928,
+    "S1_hw": 0.004171035403724849,
+    "ST": 0.09679361277820558,
+    "ST_hw": 0.004381046582128421,
+    "S1_N1024": 0.07132028450353786,
+    "ST_N1024": 0.09562131703665182,
+    "S1_hw_N1024": 0.011451171241036732,
+    "ST_hw_N1024": 0.010160416760642117
+   },
+   {
+    "input": "Aggregation selector",
+    "S1": 0.04673546517854782,
+    "S1_hw": 0.0028457269040912704,
+    "ST": 0.08574841264394169,
+    "ST_hw": 0.0026376702715612196,
+    "S1_N1024": 0.046125796238421994,
+    "ST_N1024": 0.08561979405874619,
+    "S1_hw_N1024": 0.0074096411316514205,
+    "ST_hw_N1024": 0.006852143095162466
+   },
+   {
+    "input": "Education",
+    "S1": 0.05567861265888592,
+    "S1_hw": 0.0036235755367048303,
+    "ST": 0.08230487434843227,
+    "ST_hw": 0.0029082003112479993,
+    "S1_N1024": 0.0606212327371708,
+    "ST_N1024": 0.0837506937341415,
+    "S1_hw_N1024": 0.011380961077501698,
+    "ST_hw_N1024": 0.007802189460092028
+   },
+   {
+    "input": "Economic Quality",
+    "S1": 0.0516043067068613,
+    "S1_hw": 0.0033051082421779315,
+    "ST": 0.07492362772628548,
+    "ST_hw": 0.0025179947520340626,
+    "S1_N1024": 0.05463981281845751,
+    "ST_N1024": 0.07592304847399854,
+    "S1_hw_N1024": 0.008524980974615452,
+    "ST_hw_N1024": 0.008221784948398543
+   },
+   {
+    "input": "Living Conditions",
+    "S1": 0.0454809412442368,
+    "S1_hw": 0.0035359751670766236,
+    "ST": 0.06973865923800866,
+    "ST_hw": 0.002445321607280622,
+    "S1_N1024": 0.0424561560588838,
+    "ST_N1024": 0.06746288574723343,
+    "S1_hw_N1024": 0.009464102590438013,
+    "ST_hw_N1024": 0.0063371956455347545
+   },
+   {
+    "input": "Enterprise Conditions",
+    "S1": 0.04601202532853587,
+    "S1_hw": 0.0029778183738855893,
+    "ST": 0.06699042971333989,
+    "ST_hw": 0.0024718812854675684,
+    "S1_N1024": 0.04733302135855895,
+    "ST_N1024": 0.06553409791691642,
+    "S1_hw_N1024": 0.007929019187482296,
+    "ST_hw_N1024": 0.006725708025703849
+   },
+   {
+    "input": "Normalization selector",
+    "S1": 0.022914500465960327,
+    "S1_hw": 0.0025385887395156168,
+    "ST": 0.06682274839985923,
+    "ST_hw": 0.0017083495403757629,
+    "S1_N1024": 0.023155510706906156,
+    "ST_N1024": 0.06804445235081885,
+    "S1_hw_N1024": 0.0057411978711075,
+    "ST_hw_N1024": 0.0045772119633024355
+   },
+   {
+    "input": "Governance",
+    "S1": 0.044485096158185446,
+    "S1_hw": 0.0030271371001165184,
+    "ST": 0.06487847775345872,
+    "ST_hw": 0.00259395599061496,
+    "S1_N1024": 0.04479033862108654,
+    "ST_N1024": 0.06376674468754145,
+    "S1_hw_N1024": 0.009671198846822132,
+    "ST_hw_N1024": 0.006564138379159867
+   },
+   {
+    "input": "Health",
+    "S1": 0.03730821083698611,
+    "S1_hw": 0.0032102459073318004,
+    "ST": 0.057895162991008185,
+    "ST_hw": 0.002084467739527491,
+    "S1_N1024": 0.03778775782626301,
+    "ST_N1024": 0.058072541179503695,
+    "S1_hw_N1024": 0.007938613385979915,
+    "ST_hw_N1024": 0.006753896706339753
+   },
+   {
+    "input": "Infrastructure and Market Access",
+    "S1": 0.031995938788091836,
+    "S1_hw": 0.0023001657714398355,
+    "ST": 0.05564478573719358,
+    "ST_hw": 0.002110108387543771,
+    "S1_N1024": 0.034497972580493336,
+    "ST_N1024": 0.056370287535374555,
+    "S1_hw_N1024": 0.008579384234121629,
+    "ST_hw_N1024": 0.006123113432079618
+   },
+   {
+    "input": "Investment Environment",
+    "S1": 0.0340128374437274,
+    "S1_hw": 0.0023260802408389784,
+    "ST": 0.05492852761814615,
+    "ST_hw": 0.0017606064185314366,
+    "S1_N1024": 0.035414198421528674,
+    "ST_N1024": 0.054507990967897664,
+    "S1_hw_N1024": 0.008392589436037823,
+    "ST_hw_N1024": 0.005956535670136737
+   }
+  ],
+  "sum_S1": 0.8673711760785996,
+  "sum_S1_small": 0.8843684361028317,
+  "max_change_vs_1024": 0.007007348300520355,
+  "max_change_S1_vs_1024": 0.00494262007828488,
+  "order_8192": [
+   "Personal Freedom",
+   "Natural Environment",
+   "Safety and Security",
+   "Social Capital",
+   "Aggregation selector",
+   "Education",
+   "Economic Quality",
+   "Living Conditions",
+   "Enterprise Conditions",
+   "Normalization selector",
+   "Governance",
+   "Health",
+   "Infrastructure and Market Access",
+   "Investment Environment"
+  ],
+  "order_1024": [
+   "Personal Freedom",
+   "Natural Environment",
+   "Safety and Security",
+   "Social Capital",
+   "Aggregation selector",
+   "Education",
+   "Economic Quality",
+   "Normalization selector",
+   "Living Conditions",
+   "Enterprise Conditions",
+   "Governance",
+   "Health",
+   "Infrastructure and Market Access",
+   "Investment Environment"
+  ],
+  "hw_ratio_ST": 2.916686291628409,
+  "hw_ratio_S1": 2.974441841866916,
+  "top2_sum": 0.37253706749139015,
+  "next3_sum": 0.2902207330130532,
+  "next4_sum": 0.37252560736148543,
+  "agg_exceeds_n_weights": 8,
+  "norm_exceeds_n_weights": 4,
+  "norm_interaction_frac": 0.6570853337422948,
+  "agg_interaction_frac": 0.45496990862547726,
+  "norm_small": {
+   "S1": 0.023155510706906156,
+   "hw": 0.0057411978711075
+  },
+  "norm_big": {
+   "S1": 0.022914500465960327,
+   "hw": 0.0025385887395156168
+  }
+ },
+ "importance": {
+  "table": [
+   {
+    "pillar": "Infrastructure and Market Access",
+    "rho2": 0.8898821220028963,
+    "eta2_B5": 0.8676428608131157,
+    "eta2_B10": 0.8989185534839415,
+    "eta2_B20": 0.9154366592530413,
+    "eta2_loo": 0.8791277002257769,
+    "share": 0.095388076270109,
+    "S1": 0.031995938788091836,
+    "ST": 0.05564478573719358
+   },
+   {
+    "pillar": "Investment Environment",
+    "rho2": 0.8999388447761503,
+    "eta2_B5": 0.8645920491163136,
+    "eta2_B10": 0.8941125178502324,
+    "eta2_B20": 0.9161542309669162,
+    "eta2_loo": 0.8733540801929945,
+    "share": 0.09487808735975853,
+    "S1": 0.0340128374437274,
+    "ST": 0.05492852761814615
+   },
+   {
+    "pillar": "Living Conditions",
+    "rho2": 0.8000728104307544,
+    "eta2_B5": 0.8560529577780966,
+    "eta2_B10": 0.8813032620534981,
+    "eta2_B20": 0.8986915081712528,
+    "eta2_loo": 0.8542992000505906,
+    "share": 0.09351884267160887,
+    "S1": 0.0454809412442368,
+    "ST": 0.06973865923800866
+   },
+   {
+    "pillar": "Education",
+    "rho2": 0.8285993353929589,
+    "eta2_B5": 0.8161426557667927,
+    "eta2_B10": 0.8589976609261337,
+    "eta2_B20": 0.8734276827019926,
+    "eta2_loo": 0.8249711163741543,
+    "share": 0.09115190033479607,
+    "S1": 0.05567861265888592,
+    "ST": 0.08230487434843227
+   },
+   {
+    "pillar": "Governance",
+    "rho2": 0.853907233330731,
+    "eta2_B5": 0.8134643297264931,
+    "eta2_B10": 0.8419985950643085,
+    "eta2_B20": 0.8638063660348045,
+    "eta2_loo": 0.8087641376079517,
+    "share": 0.08934805705593181,
+    "S1": 0.044485096158185446,
+    "ST": 0.06487847775345872
+   },
+   {
+    "pillar": "Economic Quality",
+    "rho2": 0.8213520540170944,
+    "eta2_B5": 0.7928865822808594,
+    "eta2_B10": 0.8139257702495386,
+    "eta2_B20": 0.8297768963727424,
+    "eta2_loo": 0.785183662837178,
+    "share": 0.08636913005062051,
+    "S1": 0.0516043067068613,
+    "ST": 0.07492362772628548
+   },
+   {
+    "pillar": "Enterprise Conditions",
+    "rho2": 0.7815409434816452,
+    "eta2_B5": 0.7794146715148812,
+    "eta2_B10": 0.8058078591528145,
+    "eta2_B20": 0.8317124585279043,
+    "eta2_loo": 0.7761249582652651,
+    "share": 0.08550770392936946,
+    "S1": 0.04601202532853587,
+    "ST": 0.06699042971333989
+   },
+   {
+    "pillar": "Health",
+    "rho2": 0.714540788247235,
+    "eta2_B5": 0.7806513730258292,
+    "eta2_B10": 0.7951112191857157,
+    "eta2_B20": 0.8138667030877286,
+    "eta2_loo": 0.7712433846777934,
+    "share": 0.0843726379046879,
+    "S1": 0.03730821083698611,
+    "ST": 0.057895162991008185
+   },
+   {
+    "pillar": "Safety and Security",
+    "rho2": 0.6866396104027719,
+    "eta2_B5": 0.7080083298597374,
+    "eta2_B10": 0.7834890170173886,
+    "eta2_B20": 0.798361408034559,
+    "eta2_loo": 0.743779066423057,
+    "share": 0.08313935653279683,
+    "S1": 0.08137460866778713,
+    "ST": 0.10767870759090589
+   },
+   {
+    "pillar": "Personal Freedom",
+    "rho2": 0.5823171985287174,
+    "eta2_B5": 0.6400889011981808,
+    "eta2_B10": 0.6763311295159637,
+    "eta2_B20": 0.707370910255973,
+    "eta2_loo": 0.6094910927576279,
+    "share": 0.07176837669673287,
+    "S1": 0.19096669216390258,
+    "ST": 0.23071431613708834
+   },
+   {
+    "pillar": "Social Capital",
+    "rho2": 0.5846183229655499,
+    "eta2_B5": 0.5160057690752101,
+    "eta2_B10": 0.6121350564658281,
+    "eta2_B20": 0.6524915878636315,
+    "eta2_loo": 0.5748275544185905,
+    "share": 0.06495625796960815,
+    "S1": 0.07177255483914928,
+    "ST": 0.09679361277820558
+   },
+   {
+    "pillar": "Natural Environment",
+    "rho2": 0.47870833996970186,
+    "eta2_B5": 0.5042307443726355,
+    "eta2_B10": 0.5616735558871561,
+    "eta2_B20": 0.5700754934253014,
+    "eta2_loo": 0.5266361699111062,
+    "share": 0.05960157322398007,
+    "S1": 0.10702938559774165,
+    "ST": 0.14182275135430183
+   }
+  ],
+  "spearman_ST_eta": -0.7622377622377624,
+  "spearman_S1_eta": -0.7972027972027973,
+  "spearman_ST_rho2": -0.8111888111888113,
+  "spearman_B5_B20": 0.9720279720279721,
+  "max_bin_move": 0.13648581878842136,
+  "spearman_eta_loo": 1.0,
+  "loo_drop_min": 0.019790853258164542,
+  "loo_drop_max": 0.06684003675833583,
+  "loo_drop_argmax": "Personal Freedom",
+  "eta_below_rho2": [
+   "Governance",
+   "Investment Environment",
+   "Economic Quality"
+  ],
+  "lowest_vif_are_top_ST": true
+ },
+ "leverage": {
+  "sigma_Y": 13.31032030715613,
+  "sigma_min": 9.061072686408698,
+  "sigma_min_pillar": "Natural Environment",
+  "sigma_max": 19.914689393724178,
+  "sigma_max_pillar": "Personal Freedom",
+  "mean_a": 1.0,
+  "sd_a": 0.28903036950053523,
+  "identity_resid": 8.326672684688674e-16,
+  "pearson_L_ST": 0.8834107009210189,
+  "pearson_info_ST": 0.7270662250583669,
+  "pearson_eq5_ST": 0.7121684203737859,
+  "pearson_eta_ST": -0.6638286524430911,
+  "spearman_L_ST": 0.7762237762237763,
+  "spearman_info_ST": 0.8111888111888113,
+  "spearman_eq5_ST": 0.8111888111888113,
+  "spearman_rho2_ST": -0.8111888111888113,
+  "spearman_sigma_ST": 0.07692307692307693,
+  "eq5_pct_error": {
+   "Safety and Security": -17.43962507086035,
+   "Personal Freedom": -24.900258307875458,
+   "Governance": -45.44511276802194,
+   "Social Capital": 70.98202262392226,
+   "Investment Environment": -43.1977412882826,
+   "Enterprise Conditions": 24.010814621921728,
+   "Infrastructure and Market Access": -27.770067968517747,
+   "Economic Quality": 14.982790211176548,
+   "Living Conditions": -54.35558548720842,
+   "Health": 39.930082267866126,
+   "Education": -58.14914790880272,
+   "Natural Environment": 108.84581462367649
+  },
+  "scale_share": {
+   "Safety and Security": 43.31077632394879,
+   "Personal Freedom": 56.26812880761172,
+   "Governance": 53.41518717907158,
+   "Social Capital": 0.04077667634484819,
+   "Investment Environment": 48.881440914301024,
+   "Enterprise Conditions": 3.0804709384558984,
+   "Infrastructure and Market Access": 35.7238748116996,
+   "Economic Quality": 5.558649083433478,
+   "Living Conditions": 63.48114500028452,
+   "Health": 0.014248716818496498,
+   "Education": 65.32241177160492,
+   "Natural Environment": 0.0237667718797367
+  },
+  "pair": {
+   "rho2_PF": 0.5823171985287174,
+   "rho2_SC": 0.5846183229655499,
+   "rho2_ratio": 0.9960638858782945,
+   "sigma_PF": 19.914689393724178,
+   "sigma_SC": 10.350379172947385,
+   "sigma_ratio": 1.9240540912525093,
+   "L_PF": 0.9550993133446849,
+   "L_SC": 0.41555112497172714,
+   "L_ratio": 2.298391836647457,
+   "ST_PF": 0.23071431613708834,
+   "ST_SC": 0.09679361277820558,
+   "ST_ratio": 2.383569633522728,
+   "eq5_PF": 0.7172771172251136,
+   "eq5_SC": 0.710517718513122,
+   "eq5_ratio": 1.0095133429270937,
+   "eta_PF": 0.6763311295159637,
+   "eta_SC": 0.6121350564658281,
+   "scale_share_PF": 56.26812880761172,
+   "scale_share_SC": 0.04077667634484819,
+   "pred_err_pct": 3.573539269729027
+  },
+  "eq5_study": {
+   "0.05": 0.9800699300699303,
+   "0.1": 0.9527902097902099,
+   "0.2": 0.8853881118881121,
+   "0.3": 0.8066608391608393,
+   "0.4": 0.732472027972028,
+   "0.5": 0.6635104895104896
+  }
+ },
+ "pca": {
+  "condition_number": 265.17242457806293,
+  "eigenvalues": [
+   8.935670530725371,
+   1.070756668957809,
+   0.5396569719762565,
+   0.3848281609967346,
+   0.3557981620130323,
+   0.2714350980887546,
+   0.15119152110791034,
+   0.09804182584673439,
+   0.0735414619648358,
+   0.045045345152455916,
+   0.040336667363648694,
+   0.03369758580645643
+  ],
+  "var_explained": [
+   0.7446392108937809,
+   0.08922972241315075,
+   0.04497141433135471,
+   0.03206901341639455,
+   0.02964984683441936,
+   0.022619591507396217,
+   0.012599293425659195,
+   0.008170152153894533,
+   0.006128455163736317,
+   0.0037537787627046596,
+   0.0033613889469707244,
+   0.002808132150538036
+  ],
+  "pa95": [
+   1.5769537001968477,
+   1.4238184464194517,
+   1.314737528885861,
+   1.2140895929754842,
+   1.135412230406549,
+   1.0632443304812473,
+   0.9960183160915188,
+   0.9360048149664918,
+   0.8732565509459238,
+   0.8102119337968658,
+   0.7471841824448759,
+   0.6754688742513782
+  ],
+  "retained_pa": 1,
+  "retained_kaiser": 2,
+  "pc1_loadings": {
+   "Safety and Security": 0.8194454507942512,
+   "Personal Freedom": 0.7469471567198919,
+   "Governance": 0.9211268390124476,
+   "Social Capital": 0.7728879005091819,
+   "Investment Environment": 0.9515670743227876,
+   "Enterprise Conditions": 0.8891250256696928,
+   "Infrastructure and Market Access": 0.9472995396848455,
+   "Economic Quality": 0.9137463087685174,
+   "Living Conditions": 0.8921798328772238,
+   "Health": 0.8516026043624167,
+   "Education": 0.9099382981294344,
+   "Natural Environment": 0.6949012659569419
+  },
+  "pc2_loadings": {
+   "Safety and Security": -0.12003757128659683,
+   "Personal Freedom": -0.5433786764369387,
+   "Governance": -0.22450762019882559,
+   "Social Capital": -0.1809015981378406,
+   "Investment Environment": 0.05103972356540244,
+   "Enterprise Conditions": -0.060738530004472505,
+   "Infrastructure and Market Access": 0.22113717895764912,
+   "Economic Quality": 0.12481409501152652,
+   "Living Conditions": 0.3365170672159682,
+   "Health": 0.38669051966720813,
+   "Education": 0.2852959395909541,
+   "Natural Environment": -0.5128515422420529
+  },
+  "vif": {
+   "Safety and Security": 2.84834966471032,
+   "Personal Freedom": 5.159247331660675,
+   "Governance": 15.922741750814238,
+   "Social Capital": 2.4716852937505194,
+   "Investment Environment": 19.092657713456376,
+   "Enterprise Conditions": 12.465401574749334,
+   "Infrastructure and Market Access": 19.490132786026933,
+   "Economic Quality": 6.529383196536531,
+   "Living Conditions": 15.063709998052621,
+   "Health": 6.579672886893858,
+   "Education": 10.903541642765983,
+   "Natural Environment": 2.5441369232912296
+  },
+  "all_positive": true,
+  "spearman_pc1_eta": 0.9230769230769231,
+  "spearman_pc1_ST": -0.8181818181818183,
+  "high_loading": [
+   {
+    "pillar": "Investment Environment",
+    "pc1": 0.9515670743227876,
+    "ST_joint_rank": 12,
+    "ST_native_rank": 10
+   },
+   {
+    "pillar": "Infrastructure and Market Access",
+    "pc1": 0.9472995396848455,
+    "ST_joint_rank": 11,
+    "ST_native_rank": 11
+   },
+   {
+    "pillar": "Governance",
+    "pc1": 0.9211268390124476,
+    "ST_joint_rank": 9,
+    "ST_native_rank": 7
+   },
+   {
+    "pillar": "Economic Quality",
+    "pc1": 0.9137463087685174,
+    "ST_joint_rank": 6,
+    "ST_native_rank": 8
+   }
+  ]
+ },
+ "network": {
+  "table": [
+   {
+    "pillar": "Living Conditions",
+    "strength": 1.9923842803850569,
+    "expected_influence": 0.92227979418012,
+    "n_edges": 6,
+    "strength_unthresholded": 2.4104610721350284
+   },
+   {
+    "pillar": "Personal Freedom",
+    "strength": 1.7474542844803405,
+    "expected_influence": 0.7913428117089343,
+    "n_edges": 5,
+    "strength_unthresholded": 2.2998775586346154
+   },
+   {
+    "pillar": "Enterprise Conditions",
+    "strength": 1.4222927441207618,
+    "expected_influence": 0.8747906325978987,
+    "n_edges": 4,
+    "strength_unthresholded": 1.9151901530095463
+   },
+   {
+    "pillar": "Governance",
+    "strength": 1.3188980078322776,
+    "expected_influence": 1.3188980078322776,
+    "n_edges": 3,
+    "strength_unthresholded": 2.2382899979611595
+   },
+   {
+    "pillar": "Investment Environment",
+    "strength": 1.0039907658136924,
+    "expected_influence": 1.0039907658136924,
+    "n_edges": 3,
+    "strength_unthresholded": 1.4443444980432156
+   },
+   {
+    "pillar": "Infrastructure and Market Access",
+    "strength": 0.9994987417200378,
+    "expected_influence": 0.9994987417200378,
+    "n_edges": 3,
+    "strength_unthresholded": 1.9731004505026457
+   },
+   {
+    "pillar": "Natural Environment",
+    "strength": 0.6890947746409669,
+    "expected_influence": 0.16649239995889298,
+    "n_edges": 2,
+    "strength_unthresholded": 1.5143253418859974
+   },
+   {
+    "pillar": "Health",
+    "strength": 0.5912831251043101,
+    "expected_influence": 0.10506849394736328,
+    "n_edges": 2,
+    "strength_unthresholded": 1.3898049693528625
+   },
+   {
+    "pillar": "Education",
+    "strength": 0.4746609887022365,
+    "expected_influence": 0.4746609887022365,
+    "n_edges": 1,
+    "strength_unthresholded": 1.3785137116832404
+   },
+   {
+    "pillar": "Economic Quality",
+    "strength": 0.4567696097040377,
+    "expected_influence": -0.013127231910421616,
+    "n_edges": 2,
+    "strength_unthresholded": 1.4209294629307676
+   },
+   {
+    "pillar": "Social Capital",
+    "strength": 0.22182118889680802,
+    "expected_influence": 0.22182118889680802,
+    "n_edges": 1,
+    "strength_unthresholded": 1.0286235413361935
+   },
+   {
+    "pillar": "Safety and Security",
+    "strength": 0.0,
+    "expected_influence": 0.0,
+    "n_edges": 0,
+    "strength_unthresholded": 0.8343824742585968
+   }
+  ],
+  "n_edges_kept": 16,
+  "n_edges": 66,
+  "unregularised_min_abs": 0.007649464634027849,
+  "spearman_strength_ST": -0.23076923076923078,
+  "compare": {
+   "PC1 loading": {
+    "strength": 0.15384615384615385,
+    "expected_influence": 0.5524475524475525
+   },
+   "eta2": {
+    "strength": 0.3216783216783217,
+    "expected_influence": 0.6083916083916086
+   },
+   "ST joint design": {
+    "strength": -0.23076923076923078,
+    "expected_influence": -0.5384615384615385
+   },
+   "ST native weights-only": {
+    "strength": -0.013986013986013986,
+    "expected_influence": -0.1958041958041958
+   },
+   "rank leverage": {
+    "strength": 0.11188811188811189,
+    "expected_influence": -0.10489510489510491
+   }
+  },
+  "edges_by_q": {
+   "0.01": {
+    "n_kept": 14,
+    "zero_strength": [
+     "Safety and Security",
+     "Social Capital",
+     "Economic Quality"
+    ],
+    "min_edges": 0
+   },
+   "0.05": {
+    "n_kept": 16,
+    "zero_strength": [
+     "Safety and Security"
+    ],
+    "min_edges": 0
+   },
+   "0.1": {
+    "n_kept": 19,
+    "zero_strength": [],
+    "min_edges": 1
+   }
+  }
+ },
+ "country": {
+  "most_unusual": [
+   [
+    "Syria",
+    1.514012621693342
+   ],
+   [
+    "Equatorial Guinea",
+    1.3298962152247709
+   ],
+   [
+    "Lesotho",
+    1.3272342754477158
+   ],
+   [
+    "Myanmar",
+    1.2341330588506012
+   ],
+   [
+    "Cambodia",
+    1.2294988551444967
+   ]
+  ],
+  "most_ordinary": [
+   [
+    "United Kingdom",
+    0.2631419820761907
+   ],
+   [
+    "Poland",
+    0.32598211067122485
+   ],
+   [
+    "Netherlands",
+    0.34227788835105016
+   ]
+  ],
+  "spearman_unus_width": 0.48334723534050983,
+  "per_pillar_corr": {
+   "Safety and Security": 0.5307903985488576,
+   "Personal Freedom": 0.338903088830944,
+   "Governance": 0.2336901068774671,
+   "Social Capital": 0.5310609417997053,
+   "Investment Environment": 0.3776319993403898,
+   "Enterprise Conditions": 0.2180681665928041,
+   "Infrastructure and Market Access": 0.09915281313448834,
+   "Economic Quality": 0.4440774217485855,
+   "Living Conditions": 0.25342688117740425,
+   "Health": 0.32524709616910763,
+   "Education": 0.38528966164057427,
+   "Natural Environment": 0.4435517948612242
+  },
+  "per_pillar_median": 0.3582675440856669,
+  "n_positive": 12,
+  "lead_counts": {
+   "Safety and Security": 17,
+   "Personal Freedom": 46,
+   "Governance": 5,
+   "Social Capital": 22,
+   "Investment Environment": 3,
+   "Enterprise Conditions": 7,
+   "Infrastructure and Market Access": 5,
+   "Economic Quality": 13,
+   "Living Conditions": 5,
+   "Health": 5,
+   "Education": 9,
+   "Natural Environment": 30
+  },
+  "china_top": [
+   "Personal Freedom",
+   0.6814307047215439
+  ],
+  "denmark_top": [
+   "Social Capital",
+   0.1957456611887575
+  ],
+  "turkmenistan_top": [
+   "Personal Freedom",
+   0.2734602269365351
+  ],
+  "belarus_top": [
+   "Personal Freedom",
+   0.24186015157789317
+  ],
+  "south_sudan_top": [
+   "Safety and Security",
+   0.28937897942234936
+  ],
+  "hhi_min": 0.0915253148841026,
+  "hhi_max": 0.5498933294328364,
+  "spearman_hhi_width": 0.22239538155667687,
+  "spearman_distmed_width": -0.7049883006529616,
+  "share_spread": {
+   "Safety and Security": {
+    "min": 0.006393569774581904,
+    "median": 0.0627880638566072,
+    "max": 0.6550118556702406,
+    "n_below_0_02": 16,
+    "n_above_0_25": 12
+   },
+   "Personal Freedom": {
+    "min": 0.014170687712684595,
+    "median": 0.10558928263290822,
+    "max": 0.6814307047215439,
+    "n_below_0_02": 2,
+    "n_above_0_25": 27
+   },
+   "Governance": {
+    "min": 0.0055568266169679975,
+    "median": 0.0405256476430953,
+    "max": 0.28501932201355235,
+    "n_below_0_02": 33,
+    "n_above_0_25": 4
+   },
+   "Social Capital": {
+    "min": 0.0050205167913259475,
+    "median": 0.0728411240674461,
+    "max": 0.7363716156016741,
+    "n_below_0_02": 22,
+    "n_above_0_25": 17
+   },
+   "Investment Environment": {
+    "min": 0.010015245721892899,
+    "median": 0.03922610001231271,
+    "max": 0.29236697962747804,
+    "n_below_0_02": 24,
+    "n_above_0_25": 1
+   },
+   "Enterprise Conditions": {
+    "min": 0.009951784993470792,
+    "median": 0.047674382203248905,
+    "max": 0.2545356843027525,
+    "n_below_0_02": 27,
+    "n_above_0_25": 1
+   },
+   "Infrastructure and Market Access": {
+    "min": 0.010584163719872548,
+    "median": 0.039945172938970326,
+    "max": 0.23367579738454883,
+    "n_below_0_02": 23,
+    "n_above_0_25": 0
+   },
+   "Economic Quality": {
+    "min": 0.008291752954314112,
+    "median": 0.05970505345719696,
+    "max": 0.3909380010689471,
+    "n_below_0_02": 20,
+    "n_above_0_25": 10
+   },
+   "Living Conditions": {
+    "min": 0.004927523362851385,
+    "median": 0.03774967036186941,
+    "max": 0.4228558814090881,
+    "n_below_0_02": 41,
+    "n_above_0_25": 1
+   },
+   "Health": {
+    "min": 0.00895119646837652,
+    "median": 0.0388925660536183,
+    "max": 0.2710720077930288,
+    "n_below_0_02": 43,
+    "n_above_0_25": 1
+   },
+   "Education": {
+    "min": 0.0101161739015516,
+    "median": 0.045657946024382806,
+    "max": 0.406813793132352,
+    "n_below_0_02": 23,
+    "n_above_0_25": 8
+   },
+   "Natural Environment": {
+    "min": 0.009759317701282553,
+    "median": 0.09697581059159324,
+    "max": 0.6240261974392372,
+    "n_below_0_02": 8,
+    "n_above_0_25": 25
+   }
+  },
+  "tier_profile": [
+   {
+    "tier": "1\u201333",
+    "mean_hhi": 0.2035428857795361,
+    "lead_pillar": "Social Capital",
+    "lead_share": 0.17567360288418982,
+    "median_rank_variance": 7.0580653212964535,
+    "median_share": {
+     "Safety and Security": 0.05557503096590246,
+     "Personal Freedom": 0.05843856356754349,
+     "Governance": 0.034163517136673455,
+     "Social Capital": 0.10089102232261911,
+     "Investment Environment": 0.04438056509850664,
+     "Enterprise Conditions": 0.0705187946567257,
+     "Infrastructure and Market Access": 0.04703041491916333,
+     "Economic Quality": 0.0696990144132385,
+     "Living Conditions": 0.016155295891443648,
+     "Health": 0.04222159474171333,
+     "Education": 0.028028353561117273,
+     "Natural Environment": 0.1234212606056991
+    }
+   },
+   {
+    "tier": "34\u201367",
+    "mean_hhi": 0.1945597631214089,
+    "lead_pillar": "Personal Freedom",
+    "lead_share": 0.2152332338986469,
+    "median_rank_variance": 32.129247499629855,
+    "median_share": {
+     "Safety and Security": 0.05989813273245539,
+     "Personal Freedom": 0.15423105973775242,
+     "Governance": 0.04243477112406558,
+     "Social Capital": 0.08493139947583367,
+     "Investment Environment": 0.037549766363538836,
+     "Enterprise Conditions": 0.06724048141713898,
+     "Infrastructure and Market Access": 0.03616356182337903,
+     "Economic Quality": 0.05897878108693786,
+     "Living Conditions": 0.025576096568929473,
+     "Health": 0.025038976426151528,
+     "Education": 0.03560746845142491,
+     "Natural Environment": 0.09808623512926831
+    }
+   },
+   {
+    "tier": "68\u2013100",
+    "mean_hhi": 0.1844179484801866,
+    "lead_pillar": "Personal Freedom",
+    "lead_share": 0.18370336189677738,
+    "median_rank_variance": 127.92960038408637,
+    "median_share": {
+     "Safety and Security": 0.09160383290429026,
+     "Personal Freedom": 0.1691791754093363,
+     "Governance": 0.038188178766338746,
+     "Social Capital": 0.054022223864784294,
+     "Investment Environment": 0.03701232162346046,
+     "Enterprise Conditions": 0.029357372143760392,
+     "Infrastructure and Market Access": 0.03735899031365012,
+     "Economic Quality": 0.062460065209714116,
+     "Living Conditions": 0.04184404417184839,
+     "Health": 0.0287381443718169,
+     "Education": 0.05790498685577693,
+     "Natural Environment": 0.1100851189531043
+    }
+   },
+   {
+    "tier": "101\u2013134",
+    "mean_hhi": 0.14669071971170392,
+    "lead_pillar": "Personal Freedom",
+    "lead_share": 0.1462542332371231,
+    "median_rank_variance": 90.1533660646528,
+    "median_share": {
+     "Safety and Security": 0.04089051803112004,
+     "Personal Freedom": 0.12460076971485295,
+     "Governance": 0.06325757808575527,
+     "Social Capital": 0.08860716196649321,
+     "Investment Environment": 0.030419024583933016,
+     "Enterprise Conditions": 0.05819031421006588,
+     "Infrastructure and Market Access": 0.04639911092421818,
+     "Economic Quality": 0.03591046974524652,
+     "Living Conditions": 0.06222600251961885,
+     "Health": 0.05056736517094525,
+     "Education": 0.05138272707269598,
+     "Natural Environment": 0.0922346755885243
+    }
+   },
+   {
+    "tier": "135\u2013167",
+    "mean_hhi": 0.15783222278151887,
+    "lead_pillar": "Safety and Security",
+    "lead_share": 0.1278393003973932,
+    "median_rank_variance": 48.2100277505815,
+    "median_share": {
+     "Safety and Security": 0.0977997233890131,
+     "Personal Freedom": 0.07358566172452734,
+     "Governance": 0.036163311710024744,
+     "Social Capital": 0.042329969764307314,
+     "Investment Environment": 0.04574019071439736,
+     "Enterprise Conditions": 0.0327383082582991,
+     "Infrastructure and Market Access": 0.03405051271406827,
+     "Economic Quality": 0.04375606621919044,
+     "Living Conditions": 0.07042845225149978,
+     "Health": 0.0594786492405915,
+     "Education": 0.06680118521230288,
+     "Natural Environment": 0.08689985221785636
+    }
+   }
+  ],
+  "share_hw": {
+   "median": 0.0028745057763275156,
+   "p95": 0.009312472461836275,
+   "max": 0.019984609988407703
+  },
+  "share_extremes": {
+   "Safety and Security": {
+    "min_country": "Saudi Arabia",
+    "min": 0.006393569774581904,
+    "max_country": "Colombia",
+    "max": 0.6550118556702406
+   },
+   "Personal Freedom": {
+    "min_country": "Pakistan",
+    "min": 0.014170687712684595,
+    "max_country": "China",
+    "max": 0.6814307047215439
+   },
+   "Governance": {
+    "min_country": "China",
+    "min": 0.0055568266169679975,
+    "max_country": "Nicaragua",
+    "max": 0.28501932201355235
+   },
+   "Social Capital": {
+    "min_country": "Iran",
+    "min": 0.0050205167913259475,
+    "max_country": "Japan",
+    "max": 0.7363716156016741
+   },
+   "Investment Environment": {
+    "min_country": "China",
+    "min": 0.010015245721892899,
+    "max_country": "Ukraine",
+    "max": 0.29236697962747804
+   },
+   "Enterprise Conditions": {
+    "min_country": "Kazakhstan",
+    "min": 0.009951784993470792,
+    "max_country": "Bolivia",
+    "max": 0.2545356843027525
+   },
+   "Infrastructure and Market Access": {
+    "min_country": "Israel",
+    "min": 0.010584163719872548,
+    "max_country": "Norway",
+    "max": 0.23367579738454883
+   },
+   "Economic Quality": {
+    "min_country": "Iran",
+    "min": 0.008291752954314112,
+    "max_country": "Seychelles",
+    "max": 0.3909380010689471
+   },
+   "Living Conditions": {
+    "min_country": "Singapore",
+    "min": 0.004927523362851385,
+    "max_country": "Madagascar",
+    "max": 0.4228558814090881
+   },
+   "Health": {
+    "min_country": "Russia",
+    "min": 0.00895119646837652,
+    "max_country": "Montenegro",
+    "max": 0.2710720077930288
+   },
+   "Education": {
+    "min_country": "United States",
+    "min": 0.0101161739015516,
+    "max_country": "Zimbabwe",
+    "max": 0.406813793132352
+   },
+   "Natural Environment": {
+    "min_country": "Lebanon",
+    "min": 0.009759317701282553,
+    "max_country": "Netherlands",
+    "max": 0.6240261974392372
+   }
+  },
+  "every_weight_below_0_02_for_two_and_above_0_20_for_one": true,
+  "max_local_independence": {
+   "Safety and Security": [
+    "Colombia",
+    2.7737433677042285
+   ],
+   "Personal Freedom": [
+    "United Arab Emirates",
+    2.4714676767786963
+   ],
+   "Governance": [
+    "Angola",
+    2.431936157225139
+   ],
+   "Social Capital": [
+    "Japan",
+    3.2342198327828364
+   ],
+   "Investment Environment": [
+    "Ukraine",
+    3.2567307868728412
+   ],
+   "Enterprise Conditions": [
+    "Iran",
+    2.6408702219279694
+   ],
+   "Infrastructure and Market Access": [
+    "Turkmenistan",
+    2.618200748274088
+   ],
+   "Economic Quality": [
+    "Jordan",
+    2.393672744158732
+   ],
+   "Living Conditions": [
+    "Madagascar",
+    2.893354358221459
+   ],
+   "Health": [
+    "Lesotho",
+    3.3186278721766715
+   ],
+   "Education": [
+    "Zimbabwe",
+    2.8660750314469414
+   ],
+   "Natural Environment": [
+    "Lesotho",
+    3.0463253385906937
+   ]
+  }
+ },
+ "clusters": {
+  "silhouette": {
+   "2": 0.12480237557254477,
+   "3": 0.15533330474245005,
+   "4": 0.17784106079295384,
+   "5": 0.20000542592900233,
+   "6": 0.21190319392481213,
+   "7": 0.19918506017832477
+  },
+  "k": 6,
+  "stability_ari": 0.6081720797967705,
+  "clusters": [
+   {
+    "cluster": 1,
+    "n": 34,
+    "dominant": "Natural Environment",
+    "dominant_share": 0.32817496577128635,
+    "regions": {
+     "Eastern Europe": 7,
+     "Latin America and the Caribbean": 7,
+     "Western Europe": 5,
+     "Central and South Asia": 5,
+     "Sub-Saharan Africa": 5,
+     "Middle East and North Africa": 3,
+     "East Asia and Pacific": 2
+    },
+    "tiers": {
+     "1\u201333": 9,
+     "34\u201367": 9,
+     "68\u2013100": 7,
+     "101\u2013134": 5,
+     "135\u2013167": 4
+    },
+    "members": [
+     "Austria",
+     "Azerbaijan",
+     "Bangladesh",
+     "Belize",
+     "Brazil",
+     "Democratic Republic of Congo",
+     "Djibouti",
+     "Estonia",
+     "France",
+     "Georgia",
+     "Guyana",
+     "India",
+     "Iraq",
+     "Kuwait",
+     "Latvia",
+     "Lesotho",
+     "Malta",
+     "Mauritius",
+     "Mongolia",
+     "Mozambique",
+     "Netherlands",
+     "Oman",
+     "Pakistan",
+     "Panama",
+     "Paraguay",
+     "Peru",
+     "Serbia",
+     "Slovakia",
+     "Slovenia",
+     "Suriname",
+     "Sweden",
+     "Taiwan, China",
+     "Tajikistan",
+     "Uzbekistan"
+    ],
+    "li_members": 1.3499410189817016,
+    "li_others": 0.6196059995260644
+   },
+   {
+    "cluster": 2,
+    "n": 9,
+    "dominant": "Personal Freedom",
+    "dominant_share": 0.5583111430220313,
+    "regions": {
+     "Middle East and North Africa": 4,
+     "East Asia and Pacific": 4,
+     "Latin America and the Caribbean": 1
+    },
+    "tiers": {
+     "34\u201367": 6,
+     "1\u201333": 2,
+     "68\u2013100": 1,
+     "101\u2013134": 0,
+     "135\u2013167": 0
+    },
+    "members": [
+     "Bahrain",
+     "China",
+     "Hong Kong",
+     "Malaysia",
+     "Qatar",
+     "Saudi Arabia",
+     "Singapore",
+     "Trinidad and Tobago",
+     "United Arab Emirates"
+    ],
+    "li_members": 1.6363486230026532,
+    "li_others": 0.7230076670289142
+   },
+   {
+    "cluster": 3,
+    "n": 19,
+    "dominant": "Social Capital",
+    "dominant_share": 0.3565748642038682,
+    "regions": {
+     "Eastern Europe": 6,
+     "East Asia and Pacific": 4,
+     "Middle East and North Africa": 4,
+     "Western Europe": 3,
+     "Sub-Saharan Africa": 1,
+     "Latin America and the Caribbean": 1
+    },
+    "tiers": {
+     "1\u201333": 8,
+     "34\u201367": 6,
+     "68\u2013100": 3,
+     "101\u2013134": 2,
+     "135\u2013167": 0
+    },
+    "members": [
+     "Albania",
+     "Armenia",
+     "Australia",
+     "Benin",
+     "Croatia",
+     "Germany",
+     "Iceland",
+     "Japan",
+     "Jordan",
+     "Lebanon",
+     "Lithuania",
+     "Morocco",
+     "New Zealand",
+     "Poland",
+     "Romania",
+     "South Korea",
+     "Switzerland",
+     "Tunisia",
+     "Uruguay"
+    ],
+    "li_members": 1.4302566384455904,
+    "li_others": 0.6855726747410589
+   },
+   {
+    "cluster": 4,
+    "n": 18,
+    "dominant": "Safety and Security",
+    "dominant_share": 0.32575747352614476,
+    "regions": {
+     "Sub-Saharan Africa": 9,
+     "Latin America and the Caribbean": 3,
+     "Central and South Asia": 2,
+     "Middle East and North Africa": 2,
+     "East Asia and Pacific": 1,
+     "North America": 1
+    },
+    "tiers": {
+     "135\u2013167": 8,
+     "68\u2013100": 4,
+     "101\u2013134": 3,
+     "1\u201333": 2,
+     "34\u201367": 1
+    },
+    "members": [
+     "Afghanistan",
+     "Angola",
+     "Cameroon",
+     "Chile",
+     "Colombia",
+     "Comoros",
+     "Guinea-Bissau",
+     "Israel",
+     "Kenya",
+     "Libya",
+     "Mauritania",
+     "Mexico",
+     "Nigeria",
+     "Philippines",
+     "South Sudan",
+     "Sri Lanka",
+     "Togo",
+     "United States"
+    ],
+    "li_members": 1.689991875103245,
+    "li_others": 0.6322044469862107
+   },
+   {
+    "cluster": 5,
+    "n": 9,
+    "dominant": "Economic Quality",
+    "dominant_share": 0.3355892687597652,
+    "regions": {
+     "Western Europe": 5,
+     "Sub-Saharan Africa": 3,
+     "North America": 1
+    },
+    "tiers": {
+     "1\u201333": 5,
+     "34\u201367": 2,
+     "101\u2013134": 1,
+     "135\u2013167": 1,
+     "68\u2013100": 0
+    },
+    "members": [
+     "Canada",
+     "Finland",
+     "Greece",
+     "Ireland",
+     "Italy",
+     "Seychelles",
+     "Spain",
+     "Sudan",
+     "Zambia"
+    ],
+    "li_members": 1.5426334424900034,
+    "li_others": 0.7494575397215804
+   },
+   {
+    "cluster": 6,
+    "n": 78,
+    "dominant": "Personal Freedom",
+    "dominant_share": 0.16945955196246282,
+    "regions": {
+     "Sub-Saharan Africa": 31,
+     "Latin America and the Caribbean": 13,
+     "Eastern Europe": 10,
+     "Western Europe": 7,
+     "East Asia and Pacific": 7,
+     "Middle East and North Africa": 6,
+     "Central and South Asia": 4
+    },
+    "tiers": {
+     "101\u2013134": 23,
+     "135\u2013167": 20,
+     "68\u2013100": 18,
+     "34\u201367": 10,
+     "1\u201333": 7
+    },
+    "members": [
+     "Algeria",
+     "Argentina",
+     "Belarus",
+     "Belgium",
+     "Bolivia",
+     "Bosnia and Herzegovina",
+     "Botswana",
+     "Bulgaria",
+     "Burkina Faso",
+     "Burundi",
+     "Cabo Verde",
+     "Cambodia",
+     "Central African Republic",
+     "Chad",
+     "Congo",
+     "Costa Rica",
+     "Cuba",
+     "Cyprus",
+     "Czechia",
+     "C\u00f4te d'Ivoire",
+     "Denmark",
+     "Dominican Republic",
+     "Ecuador",
+     "Egypt",
+     "El Salvador",
+     "Equatorial Guinea",
+     "Eritrea",
+     "Eswatini",
+     "Ethiopia",
+     "Gabon",
+     "Ghana",
+     "Guatemala",
+     "Guinea",
+     "Haiti",
+     "Honduras",
+     "Hungary",
+     "Indonesia",
+     "Iran",
+     "Jamaica",
+     "Kazakhstan",
+     "Kyrgyzstan",
+     "Laos",
+     "Liberia",
+     "Luxembourg",
+     "Madagascar",
+     "Malawi",
+     "Mali",
+     "Moldova",
+     "Montenegro",
+     "Myanmar",
+     "Namibia",
+     "Nepal",
+     "Nicaragua",
+     "Niger",
+     "North Macedonia",
+     "Norway",
+     "Papua New Guinea",
+     "Portugal",
+     "Russia",
+     "Rwanda",
+     "Senegal",
+     "Sierra Leone",
+     "Somalia",
+     "South Africa",
+     "Syria",
+     "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+     "Tanzania",
+     "Thailand",
+     "The Gambia",
+     "Turkey",
+     "Turkmenistan",
+     "Uganda",
+     "Ukraine",
+     "United Kingdom",
+     "Venezuela",
+     "Vietnam",
+     "Yemen",
+     "Zimbabwe"
+    ],
+    "li_members": 0.8363237609111096,
+    "li_others": 0.7160572544553456
+   }
+  ],
+  "region_totals": {
+   "Sub-Saharan Africa": 49,
+   "Latin America and the Caribbean": 25,
+   "Eastern Europe": 23,
+   "Western Europe": 20,
+   "Middle East and North Africa": 19,
+   "East Asia and Pacific": 18,
+   "Central and South Asia": 11,
+   "North America": 2
+  },
+  "ari_clr_vs_euclidean": 0.08089908294732068
+ },
+ "framings": {
+  "Three domains, equal weight": {
+   "mean": 0.0,
+   "max": 0,
+   "argmax": "Afghanistan",
+   "spearman": 1.0,
+   "max_dev": 2.842170943040401e-14
+  },
+  "Three domains, geometric mean across domains": {
+   "mean": 0.874251497005988,
+   "max": 8,
+   "argmax": "Venezuela",
+   "spearman": 0.9994898327269729,
+   "max_margin": -0.7052643264363141,
+   "reachable_by_reweighting": false
+  },
+  "Pillars, min\u2013max normalization": {
+   "mean": 1.3293413173652695,
+   "max": 9,
+   "argmax": "Lesotho",
+   "spearman": 0.9991394148020655,
+   "max_margin": 0.022283302629852897,
+   "reachable_by_reweighting": true,
+   "implied_weights_range": [
+    0.06676676897240416,
+    0.11819227305578646
+   ],
+   "ranks_equal_reweighting": true
+  },
+  "Pillars, geometric mean": {
+   "mean": 1.748502994011976,
+   "max": 12,
+   "argmax": "China",
+   "spearman": 0.9983767404949139,
+   "max_margin": -0.95546598525984,
+   "reachable_by_reweighting": false
+  },
+  "First principal component": {
+   "mean": 1.8083832335329342,
+   "max": 10,
+   "argmax": "Lesotho",
+   "spearman": 0.9984334257474725,
+   "max_margin": 0.010065709045597115,
+   "reachable_by_reweighting": true,
+   "implied_weights_range": [
+    0.0529122485272422,
+    0.10818906431950827
+   ],
+   "ranks_equal_reweighting": true
+  },
+  "Pillars, z-score normalization": {
+   "mean": 1.9401197604790419,
+   "max": 11,
+   "argmax": "Lesotho",
+   "spearman": 0.9983020190256322,
+   "max_margin": 0.022336647225939366,
+   "reachable_by_reweighting": true,
+   "implied_weights_range": [
+    0.060029363053091575,
+    0.13193428207441482
+   ],
+   "ranks_equal_reweighting": true
+  },
+  "Pillars, percentile-rank normalization": {
+   "mean": 2.7784431137724552,
+   "max": 14,
+   "argmax": "Venezuela",
+   "spearman": 0.9968990510382042,
+   "max_margin": -1.5843393919715039,
+   "reachable_by_reweighting": false
+  }
+ },
+ "y2026": {
+  "n": 161,
+  "variants": {
+   "Uniform normalization function": {
+    "mean": 2.9316770186335406,
+    "max": 13,
+    "spearman": 0.9962244076374513
+   },
+   "Uniform aggregation exponent": {
+    "mean": 3.751552795031056,
+    "max": 26,
+    "spearman": 0.9923452956061654
+   },
+   "Uniform weights": {
+    "mean": 3.2049689440993787,
+    "max": 15,
+    "spearman": 0.9956205429031518
+   },
+   "Uniform weights and normalization": {
+    "mean": 4.385093167701863,
+    "max": 21,
+    "spearman": 0.9921986427421211
+   },
+   "Uniform aggregation exponent and normalization": {
+    "mean": 4.633540372670807,
+    "max": 26,
+    "spearman": 0.9893748562226823
+   },
+   "Uniform weights and aggregation exponent": {
+    "mean": 5.341614906832298,
+    "max": 25,
+    "spearman": 0.9861197377501727
+   },
+   "All three uniform": {
+    "mean": 5.77639751552795,
+    "max": 28,
+    "spearman": 0.9839602024384635
+   }
+  },
+  "composite_is_domain_mean": 2.842170943040401e-14,
+  "domain_identity": {
+   "max_resid": 5.551115123125783e-16,
+   "mean_a": 1.0000000000000002
+  },
+  "leaf_identity": {
+   "max_resid": 6.661338147750939e-16,
+   "mean_a": 1.0
+  }
+ },
+ "rank_leverage": {
+  "identity_resid": 1.1102230246251565e-16,
+  "by_pillar": {
+   "Safety and Security": {
+    "R": 0.5442889215584257,
+    "neutral": 0.008479963385062314,
+    "L": 0.552768884943488,
+    "a": 1.0920867166591486,
+    "c": 1.317931074928346,
+    "rho2": 0.6866396104027719
+   },
+   "Personal Freedom": {
+    "R": 0.9350108575627499,
+    "neutral": 0.020088455781934987,
+    "L": 0.9550993133446849,
+    "a": 1.1417337496220819,
+    "c": 1.4961840837907776,
+    "rho2": 0.5823171985287174
+   },
+   "Governance": {
+    "R": 0.2597288420540858,
+    "neutral": 0.053877154884977144,
+    "L": 0.313605996939063,
+    "a": 1.2321145296722658,
+    "c": 1.333354812600005,
+    "rho2": 0.853907233330731
+   },
+   "Social Capital": {
+    "R": 0.2511787193240893,
+    "neutral": 0.1643724056476378,
+    "L": 0.41555112497172714,
+    "a": 0.594571330999351,
+    "c": 0.777620593201099,
+    "rho2": 0.5846183229655499
+   },
+   "Investment Environment": {
+    "R": 0.1583472341776737,
+    "neutral": 0.03739606730330051,
+    "L": 0.1957433014809743,
+    "a": 1.1933806280455737,
+    "c": 1.2579763740118977,
+    "rho2": 0.8999388447761503
+   },
+   "Enterprise Conditions": {
+    "R": 0.2044373249744502,
+    "neutral": 0.020965190528522266,
+    "L": 0.22540251550297247,
+    "a": 0.8552063864373768,
+    "c": 0.9673754640147362,
+    "rho2": 0.7815409434816452
+   },
+   "Infrastructure and Market Access": {
+    "R": 0.15612834108768087,
+    "neutral": 0.015191690532936297,
+    "L": 0.17132003162061715,
+    "a": 1.123254576113572,
+    "c": 1.1907263261756502,
+    "rho2": 0.8898821220028963
+   },
+   "Economic Quality": {
+    "R": 0.18181569238712686,
+    "neutral": 0.00734715232983478,
+    "L": 0.18916284471696165,
+    "a": 0.9142844685612066,
+    "c": 1.0088269335418116,
+    "rho2": 0.8213520540170944
+   },
+   "Living Conditions": {
+    "R": 0.44028462406557106,
+    "neutral": 0.10717829494107162,
+    "L": 0.5474629190066427,
+    "a": 1.3273809630095672,
+    "c": 1.483989503003905,
+    "rho2": 0.8000728104307544
+   },
+   "Health": {
+    "R": 0.2009057931768102,
+    "neutral": 0.08459409864705793,
+    "L": 0.2854998918238681,
+    "a": 0.7091493533666154,
+    "c": 0.8389270519878943,
+    "rho2": 0.714540788247235
+   },
+   "Education": {
+    "R": 0.3746701143352046,
+    "neutral": 0.11959916263456126,
+    "L": 0.4942692769697659,
+    "a": 1.3458311186613507,
+    "c": 1.4784896057438035,
+    "rho2": 0.8285993353929589
+   },
+   "Natural Environment": {
+    "R": 0.2415811208697391,
+    "neutral": 0.2798344628128784,
+    "L": 0.5214155836826174,
+    "a": 0.4710061788518903,
+    "c": 0.6807554196526077,
+    "rho2": 0.47870833996970186
+   }
+  }
+ },
+ "weights_only": {
+  "cells": {
+   "identity": {
+    "ST": [
+     0.15294355325401038,
+     0.28157530271224224,
+     0.07564182281994786,
+     0.07798992056443775,
+     0.060704509134504314,
+     0.06613920595998386,
+     0.05991421491368871,
+     0.06679305408251351,
+     0.11153576235345275,
+     0.05763294634330314,
+     0.11599456007007668,
+     0.08270632175378281
+    ],
+    "ST_hw": [
+     0.005017633637256019,
+     0.008230045628753652,
+     0.003041584009247804,
+     0.003162235466314521,
+     0.002355538449787444,
+     0.0023554229886929845,
+     0.0022949292746801443,
+     0.0023755282512324394,
+     0.0036662399133935014,
+     0.002449684855928457,
+     0.004017558541035922,
+     0.003440965312825818
+    ],
+    "R": [
+     0.5442889215584257,
+     0.9350108575627499,
+     0.2597288420540858,
+     0.2511787193240893,
+     0.1583472341776737,
+     0.2044373249744502,
+     0.15612834108768087,
+     0.18181569238712686,
+     0.44028462406557106,
+     0.2009057931768102,
+     0.3746701143352046,
+     0.2415811208697391
+    ],
+    "L": [
+     0.552768884943488,
+     0.9550993133446848,
+     0.3136059969390629,
+     0.4155511249717272,
+     0.1957433014809744,
+     0.2254025155029724,
+     0.17132003162061715,
+     0.18916284471696154,
+     0.5474629190066427,
+     0.28549989182386803,
+     0.49426927696976597,
+     0.5214155836826173
+    ],
+    "c": [
+     1.317931074928346,
+     1.4961840837907776,
+     1.333354812600005,
+     0.777620593201099,
+     1.2579763740118977,
+     0.9673754640147362,
+     1.1907263261756502,
+     1.0088269335418116,
+     1.483989503003905,
+     0.8389270519878943,
+     1.4784896057438035,
+     0.6807554196526077
+    ],
+    "pearson_R_ST": 0.9897966934847344,
+    "spearman_R_ST": 0.9090909090909092,
+    "pearson_L_ST": 0.9215508802979145,
+    "spearman_L_ST": 0.8881118881118882,
+    "pearson_info_ST": 0.4165368237531448,
+    "spearman_info_ST": 0.4895104895104896,
+    "spearman_eta_ST": -0.3916083916083916,
+    "spearman_rho2_ST": -0.4895104895104896,
+    "pair_ratio_ST": 3.610406327822783,
+    "pair_ratio_ST_ci": [
+     3.4170602576721487,
+     3.8026266915057754
+    ],
+    "pair_ratio_R": 3.7224923356517716,
+    "pair_ratio_L": 2.2983918366474563
+   },
+   "minmax": {
+    "ST": [
+     0.12174812072124146,
+     0.22598110559993612,
+     0.06292376430092282,
+     0.09248642661011322,
+     0.06587331732071014,
+     0.0727322229763881,
+     0.06558971202917967,
+     0.08553254351388935,
+     0.09307464664462296,
+     0.07559944437194732,
+     0.09994608660148363,
+     0.15333947751928528
+    ],
+    "ST_hw": [
+     0.004584014863784375,
+     0.008173019759104852,
+     0.002328046264195225,
+     0.0033172361755177265,
+     0.002775292533774662,
+     0.00272663925069605,
+     0.0023920446080477123,
+     0.002952933066858142,
+     0.003262438281430448,
+     0.0032231156240606074,
+     0.0035301328895623804,
+     0.005604789056213283
+    ],
+    "R": [
+     0.3951299761779053,
+     0.6997290070618313,
+     0.19948494306204764,
+     0.3093580496317772,
+     0.17170768267145933,
+     0.22393306022339096,
+     0.17570298085643365,
+     0.24915124842365316,
+     0.3384273332626942,
+     0.29078492101692327,
+     0.30001961751869227,
+     0.5144695532641649
+    ],
+    "L": [
+     0.40439694011483307,
+     0.7007664510850122,
+     0.20293384537832004,
+     0.41874835551791956,
+     0.23811451183395704,
+     0.23372121746254293,
+     0.22402950339501204,
+     0.2592072464791242,
+     0.3614172934124098,
+     0.309537987496053,
+     0.3403010482293217,
+     0.6007694357117688
+    ],
+    "c": [
+     1.1008482173649086,
+     1.2791980672797834,
+     1.1490816145633223,
+     0.8702093131662426,
+     1.324199744189629,
+     1.017767647768275,
+     1.289843164139839,
+     1.2082079478614598,
+     1.2902194011625099,
+     1.0176710250674337,
+     1.3197369947645192,
+     1.0065945574073902
+    ],
+    "pearson_R_ST": 0.982404465843165,
+    "spearman_R_ST": 0.9440559440559443,
+    "pearson_L_ST": 0.953409221913337,
+    "spearman_L_ST": 0.9370629370629372,
+    "pearson_info_ST": 0.7438882697347089,
+    "spearman_info_ST": 0.7832167832167832,
+    "spearman_eta_ST": -0.6223776223776225,
+    "spearman_rho2_ST": -0.7622377622377624,
+    "pair_ratio_ST": 2.443397522023253,
+    "pair_ratio_ST_ci": [
+     2.2917728458894335,
+     2.593989951544761
+    ],
+    "pair_ratio_R": 2.2618742518408843,
+    "pair_ratio_L": 1.6734786939480273
+   },
+   "zscore": {
+    "ST": [
+     0.12601621188043707,
+     0.18359961978772604,
+     0.061795971683425245,
+     0.13467796207479169,
+     0.05385505700714432,
+     0.08617816794905676,
+     0.05638200487181008,
+     0.07795974378453063,
+     0.07904574548262405,
+     0.08844486662564341,
+     0.0819764562058307,
+     0.17929934679303425
+    ],
+    "ST_hw": [
+     0.004731202805173279,
+     0.006759288768870275,
+     0.0021715620334262845,
+     0.004515019852830232,
+     0.002321421506023113,
+     0.0031594827711635826,
+     0.0020899503099672707,
+     0.002588502360946772,
+     0.0027982051336601227,
+     0.0034644225120892755,
+     0.0029957328629113614,
+     0.006297082590459774
+    ],
+    "R": [
+     0.43700428350870973,
+     0.5732635276498733,
+     0.201523645007371,
+     0.5285673192834774,
+     0.1401615389482108,
+     0.2930985945297158,
+     0.15448602752435958,
+     0.23553939100221014,
+     0.29031407216751237,
+     0.38582895281081947,
+     0.24547949843356745,
+     0.6702291802759853
+    ],
+    "L": [
+     0.4388232586103382,
+     0.5868768756260805,
+     0.20689843612496206,
+     0.5369814437667332,
+     0.1504693719967619,
+     0.2939848336261607,
+     0.16351218512038745,
+     0.23882819418599088,
+     0.29128258220302894,
+     0.3860941504614438,
+     0.24825016309106562,
+     0.7002909445993125
+    ],
+    "c": [
+     1.1634106626428273,
+     1.163410662642827,
+     1.1634106626428273,
+     1.163410662642827,
+     1.1634106626428273,
+     1.1634106626428269,
+     1.1634106626428276,
+     1.1634106626428269,
+     1.1634106626428269,
+     1.1634106626428273,
+     1.1634106626428269,
+     1.163410662642827
+    ],
+    "pearson_R_ST": 0.9658860686407111,
+    "spearman_R_ST": 0.9860139860139862,
+    "pearson_L_ST": 0.9681255171071026,
+    "spearman_L_ST": 0.9860139860139862,
+    "pearson_info_ST": 0.9658860686407111,
+    "spearman_info_ST": 0.9860139860139862,
+    "spearman_eta_ST": -0.9160839160839163,
+    "spearman_rho2_ST": -0.9720279720279721,
+    "pair_ratio_ST": 1.3632491683068855,
+    "pair_ratio_ST_ci": [
+     1.2778740750707738,
+     1.4501154350109033
+    ],
+    "pair_ratio_R": 1.0845610516120932,
+    "pair_ratio_L": 1.0929183539553036
+   },
+   "rank": {
+    "ST": [
+     0.11998375972965906,
+     0.1558058843525331,
+     0.08120187639512642,
+     0.14589445799536496,
+     0.05602365791340072,
+     0.09459056180873755,
+     0.05150250551212376,
+     0.07968980382060252,
+     0.06641718462086037,
+     0.08262029505736987,
+     0.07129987464664234,
+     0.19868145035047685
+    ],
+    "ST_hw": [
+     0.004695375344850358,
+     0.005979975343682123,
+     0.002886469039105652,
+     0.004916704501872565,
+     0.0024116805245397686,
+     0.003577816033884934,
+     0.0019655477328755083,
+     0.002652850313735529,
+     0.002439397361086962,
+     0.0032984432368572264,
+     0.0026053353254379963,
+     0.007005600327430181
+    ],
+    "R": [
+     0.4011281317817654,
+     0.5639971610701674,
+     0.24374822261269324,
+     0.5579303252011657,
+     0.15395568010082655,
+     0.3054234109535109,
+     0.1401158290865041,
+     0.24823750249100532,
+     0.18866722069871664,
+     0.2751592078301546,
+     0.20650351309478257,
+     0.7275990248065237
+    ],
+    "L": [
+     0.40198846838323765,
+     0.5777339998096331,
+     0.24611089158030486,
+     0.5708750241564007,
+     0.16216083692194116,
+     0.3057759035936074,
+     0.14950720942373574,
+     0.25039645340771144,
+     0.194224961710302,
+     0.2762828851539809,
+     0.21088840752352944,
+     0.7739606978964464
+    ],
+    "c": [
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623615,
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623617,
+     1.1590191880623617
+    ],
+    "pearson_R_ST": 0.9972478721388925,
+    "spearman_R_ST": 0.9930069930069931,
+    "pearson_L_ST": 0.9969501778767806,
+    "spearman_L_ST": 0.9930069930069931,
+    "pearson_info_ST": 0.9972478721388929,
+    "spearman_info_ST": 0.9930069930069931,
+    "spearman_eta_ST": -0.9790209790209792,
+    "spearman_rho2_ST": -0.9230769230769231,
+    "pair_ratio_ST": 1.0679355918885076,
+    "pair_ratio_ST_ci": [
+     1.0003761458982428,
+     1.1372192326841162
+    ],
+    "pair_ratio_R": 1.0108738234775358,
+    "pair_ratio_L": 1.0120148462675664
+   }
+  },
+  "closest_pairs": [
+   {
+    "pair": [
+     "Personal Freedom",
+     "Social Capital"
+    ],
+    "d_rho2": 0.0023011244368325023,
+    "R_ratio": 3.7224923356517716,
+    "L_ratio": 2.298391836647457,
+    "ST_ratio": 3.610406327822783
+   },
+   {
+    "pair": [
+     "Economic Quality",
+     "Education"
+    ],
+    "d_rho2": 0.0072472813758645005,
+    "R_ratio": 0.485268734896914,
+    "L_ratio": 0.38271212379751574,
+    "ST_ratio": 0.5758291944222326
+   },
+   {
+    "pair": [
+     "Investment Environment",
+     "Infrastructure and Market Access"
+    ],
+    "d_rho2": 0.010056722773253979,
+    "R_ratio": 1.01421198146688,
+    "L_ratio": 1.1425593354689643,
+    "ST_ratio": 1.0131904293823109
+   },
+   {
+    "pair": [
+     "Enterprise Conditions",
+     "Living Conditions"
+    ],
+    "d_rho2": 0.018531866949109244,
+    "R_ratio": 0.4643299216009042,
+    "L_ratio": 0.41172197728379395,
+    "ST_ratio": 0.5929865413963922
+   }
+  ],
+  "pairs_ordered": {
+   "R": 58,
+   "L": 58,
+   "neg_rho2": 44,
+   "neg_eta2": 42,
+   "total": 66
+  },
+  "excluding_personal_freedom": {
+   "pearson_R_ST": 0.9759955143211724,
+   "spearman_R_ST": 0.881818181818182,
+   "pearson_L_ST": 0.8259115592552836,
+   "spearman_L_ST": 0.8545454545454546
+  }
+ },
+ "local_rank_shift": {
+  "0.02": {
+   "shift": [
+    0.6347305389221557,
+    0.874251497005988,
+    0.40718562874251496,
+    0.38323353293413176,
+    0.3712574850299401,
+    0.39520958083832336,
+    0.40718562874251496,
+    0.41916167664670656,
+    0.562874251497006,
+    0.2994011976047904,
+    0.6347305389221557,
+    0.4431137724550898
+   ],
+   "pearson_R": 0.944844259046071,
+   "spearman_R": 0.7333378475845165,
+   "pearson_L": 0.8849234202069258,
+   "spearman_L": 0.6947411187642789
+  },
+  "0.05": {
+   "shift": [
+    1.5568862275449102,
+    2.155688622754491,
+    0.9940119760479041,
+    0.8502994011976048,
+    0.874251497005988,
+    0.9221556886227545,
+    0.8383233532934131,
+    1.029940119760479,
+    1.2335329341317365,
+    0.8622754491017964,
+    1.3173652694610778,
+    1.1137724550898203
+   ],
+   "pearson_R": 0.9737172197659455,
+   "spearman_R": 0.8041958041958043,
+   "pearson_L": 0.9093737615095294,
+   "spearman_L": 0.7832167832167832
+  }
+ },
+ "positivity_repair": {
+  "baseline": {
+   "ST_aggregation": 0.08574841264394169,
+   "ST_normalization": 0.06682274839985923,
+   "agg_exceeds": 8,
+   "norm_exceeds": 4,
+   "top4_weights": [
+    "Personal Freedom",
+    "Natural Environment",
+    "Safety and Security",
+    "Social Capital"
+   ]
+  },
+  "variants": {
+   "0.01": {
+    "ST_aggregation": 0.0743313207716436,
+    "ST_normalization": 0.05938779214480413,
+    "agg_exceeds": 6,
+    "norm_exceeds": 3,
+    "top4_weights": [
+     "Personal Freedom",
+     "Natural Environment",
+     "Safety and Security",
+     "Social Capital"
+    ],
+    "max_abs_change_weights": 0.001669303830245883
+   },
+   "0.05": {
+    "ST_aggregation": 0.0647995117709141,
+    "ST_normalization": 0.056817347228900035,
+    "agg_exceeds": 3,
+    "norm_exceeds": 1,
+    "top4_weights": [
+     "Personal Freedom",
+     "Natural Environment",
+     "Safety and Security",
+     "Social Capital"
+    ],
+    "max_abs_change_weights": 0.0033582996347108485
+   }
+  },
+  "geo_minmax_vs_zscore_mean_abs_rank_diff": 0.029005988023952097
+ },
+ "density": {
+  "spearman_density_width": 0.7143575402527713,
+  "tier_mean_neighbours": [
+   4.303030303030303,
+   6.264705882352941,
+   11.030303030303031,
+   7.0588235294117645,
+   5.848484848484849
+  ]
+ },
+ "prior_widths": {
+  "near_equal": {
+   "median": 4.0,
+   "max": 12.0,
+   "argmax": "Saudi Arabia",
+   "n_over_10": 4,
+   "tier_median": [
+    2.0,
+    2.5,
+    6.0,
+    4.0,
+    4.0
+   ]
+  },
+  "grid": {
+   "median": 11.0,
+   "max": 29.0,
+   "argmax": "Belarus",
+   "n_over_10": 92,
+   "tier_median": [
+    5.0,
+    7.0,
+    19.0,
+    12.0,
+    11.0
+   ]
+  },
+  "uniform": {
+   "median": 22.0,
+   "max": 55.0,
+   "argmax": "Turkmenistan",
+   "n_over_10": 127,
+   "tier_median": [
+    8.0,
+    17.024999999999977,
+    36.0,
+    29.5,
+    20.0
+   ]
+  }
+ },
+ "leave_one_out": {
+  "cells": {
+   "identity": {
+    "max_resid": 3.3306690738754696e-16,
+    "a_min": 0.4710061788518903,
+    "a_max": 1.3458311186613507,
+    "spearman_1minus_corr_R": 1.0
+   },
+   "minmax": {
+    "max_resid": 3.3306690738754696e-16,
+    "a_min": 0.669257946601672,
+    "a_max": 1.2576952253389608,
+    "spearman_1minus_corr_R": 0.9930069930069931
+   },
+   "zscore": {
+    "max_resid": 4.440892098500626e-16,
+    "a_min": 0.8266167126758548,
+    "a_max": 1.1015274989771304,
+    "spearman_1minus_corr_R": 1.0
+   },
+   "rank": {
+    "max_resid": 2.220446049250313e-16,
+    "a_min": 0.7846823902001449,
+    "a_max": 1.0969091344365003,
+    "spearman_1minus_corr_R": 1.0
+   }
+  },
+  "max_resid_all": 4.440892098500626e-16
+ },
+ "pooling": {
+  "unweighted_ST": [
+   0.11494568138976284,
+   0.18028851608928415,
+   0.07282061349777198,
+   0.1318119351062244,
+   0.06314836153706956,
+   0.08675918976481663,
+   0.0672342082678641,
+   0.10265214713152002,
+   0.06932993775354025,
+   0.06940636692946861,
+   0.08502313493376742,
+   0.16626527735666333,
+   0.0987425838715802,
+   0.0831585102403088
+  ],
+  "unweighted_agg_exceeds": 5,
+  "unweighted_norm_exceeds": 7,
+  "unweighted_top2": [
+   "Personal Freedom",
+   "Natural Environment"
+  ],
+  "n_countries_half_weight": 33,
+  "half_weight_ranks_34_134": 31
+ }
+}

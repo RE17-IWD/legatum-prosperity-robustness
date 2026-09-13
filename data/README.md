@@ -1,15 +1,14 @@
 # Data directory
 
-The Legatum Prosperity Index dataset is **not** included in this repository
-because it is distributed under the Prosperity Institute's terms of use.
+The Legatum data files are not included in this repository; they are published by the Legatum Institute Foundation under its terms of use.
 
-In order to run the analysis, download the file yourself and place it here:
+Place both files here, or set the environment variables:
 
-1. Go to https://index.prosperity.com (Resources / FAQ, "Can I see the actual data used?").
-2. Download `Dataset_Legatum_Prosperity_Index_2023.xlsx`.
-3. Save it in this `data/` folder, or set an environment variable:
+| File | SHA-256 | Variable |
+| :-- | :-- | :-- |
+| `Dataset_Legatum_Prosperity_Index_2023.xlsx` | `8c789bd5ab881c12005f83e9b0c55ae81a68548dd18d3acb9fff9bec0eef631c` | `LPI_DATA_2023` |
+| `Legatum_Prosperity_Index_2026_Data_Sheet.xlsx` | `54621ff5d00d0cf4afe6bdbcc47008acff2086cd87cf55c3c8777f819eed1718` | `LPI_DATA_2026` |
 
-       export LPI_DATA=/path/to/Dataset_Legatum_Prosperity_Index_2023.xlsx
+The 2023 edition has been withdrawn from the publisher's website. The analysis reads its sheets `Prosperity Index` (keyed on `area_code`, columns `score_2023`, `rank_2023`) and `Pillars x 12` (long format: `area_code`, `pillar_name`, `score_2023`). From the 2026 file it reads the `ranks*` sheets and `scores_uni_wghts_uni_p`.
 
-The code looks for `data/Dataset_Legatum_Prosperity_Index_2023.xlsx` by default,
-or the path in the `LPI_DATA` environment variable if set.
+To confirm a copy is the same data, run `pytest -q tests/`: it checks the SHA-256 digest and that the equal-weighted mean of the twelve pillar scores reproduces every published 2023 score and rank.
