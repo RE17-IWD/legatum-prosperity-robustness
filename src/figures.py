@@ -83,24 +83,26 @@ save(fig, "fig6_importance")
 lev = pd.read_csv(f"{OUT}/rank_leverage.csv").drop(columns=["L"]).rename(columns={"rank_leverage": "L", "ST_native_weights_only": "ST", "ST_native_weights_only_hw": "ST_hw"})
 fig, ax = plt.subplots(figsize=(5.6, 3.9))
 ax.errorbar(lev["L"], lev["ST"], yerr=lev["ST_hw"], fmt="o", color="black", ms=4, capsize=2, label="Pillar (95% Bootstrap Interval)")
-short = {"Infrastructure and Market Access": "Infrastructure", "Investment Environment": "Investment Env.", "Enterprise Conditions": "Enterprise Cond.",
-         "Safety and Security": "Safety & Security", "Economic Quality": "Econ. Quality"}
+short = {}
 offs = {"Living Conditions": (6, -10, "left"), "Personal Freedom": (-6, 3, "right")}
 # crowded lower-left cluster: labels placed in free space with thin leader lines
-placed = {"Natural Environment": (0.02, 0.107),"Social Capital": (0.33, 0.091), "Governance": (0.34, 0.079),
-          "Enterprise Cond.": (0.27, 0.060), "Health": (0.27, 0.048), "Econ. Quality": (0.02, 0.093),
-          "Infrastructure": (0.02, 0.079), "Investment Env.": (0.02, 0.046)}
+placed = {"Natural Environment": (0.02, 0.112, (1, 0.5)), "Economic Quality": (0.02, 0.098, (0.5, 0.5)),
+          "Investment Environment": (0.02, 0.074, (0.5, 0.5)), "Infrastructure and Market Access": (0.02, 0.044, (0.5, 0.5)),
+          "Social Capital": (0.33, 0.093, (0, 0.5)), "Governance": (0.34, 0.081, (0, 0.5)),
+          "Enterprise Conditions": (0.29, 0.066, (0, 0.5)), "Health": (0.29, 0.055, (0, 0.5))}
+wrap = {"Investment Environment": "Investment\nEnvironment"}
 for _, r in lev.iterrows():
     lab_ = short.get(r["pillar"], r["pillar"])
     if lab_ in placed:
-        ax.annotate(lab_, (r["L"], r["ST"]), xytext=placed[lab_], textcoords="data", fontsize=6.5, ha="left", va="center",
-                    arrowprops=dict(arrowstyle="-", color="grey", lw=0.5, shrinkA=1, shrinkB=3))
+        x_, y_, rp_ = placed[lab_]
+        ax.annotate(wrap.get(lab_, lab_), (r["L"], r["ST"]), xytext=(x_, y_), textcoords="data", fontsize=6.2, ha="left", va="center",
+                    arrowprops=dict(arrowstyle="-", color="grey", lw=0.5, shrinkA=1, shrinkB=3, relpos=rp_))
     else:
         dx, dy, ha = offs.get(r["pillar"], (4, 3, "left"))
         ax.annotate(lab_, (r["L"], r["ST"]), fontsize=6.5, xytext=(dx, dy), textcoords="offset points", ha=ha)
-ax.set_xlim(0.0, 1.02); ax.set_ylim(0.04, 0.30)
+ax.set_xlim(0.0, 1.02); ax.set_ylim(0.035, 0.30)
 pair = lev.set_index("pillar").loc[["Social Capital", "Personal Freedom"]]
-ax.plot(pair["L"], pair["ST"], ls="--", color="grey", lw=1, zorder=0, label="Matched Pair (Equal Alignment, Unequal Spread)")
+ax.plot(pair["L"], pair["ST"], ls="--", color="grey", lw=1, zorder=0, label="Matched Pair (Nearly Equal Alignment, Unequal Spread)")
 ax.set_xlabel("Rank Leverage $c_j^2(1-\\rho_j^2)$ From (eq5), Dimensionless"); ax.set_ylabel("Total-Effect Index $S_T$, Weights Only"); ax.legend(frameon=False, loc="upper left", fontsize=7)
 save(fig, "fig7_leverage")
 
