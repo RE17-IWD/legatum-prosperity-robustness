@@ -1,69 +1,39 @@
-How Robust Are the Legatum Prosperity Index Rankings?
+# How Robust Are the Legatum Prosperity Index Rankings?
 
-A Monte Carlo and variance-based sensitivity analysis of weighting, normalization, and aggregation choices in the 2023 Legatum Prosperity Index.
+Replication code for the revised manuscript *How Robust Are the Legatum Prosperity Index Rankings? A Monte Carlo and Sensitivity Analysis of Weighting, Normalization, and Aggregation* (Adrian Erlikhman and Ryan Erlikhman), resubmitted to the Journal of High School Science.
 
-**Authors:**  Adrian Erlikhman and Ryan Erlikhman
+Every number, table and figure in the revised manuscript is produced by `src/analysis.py` and `src/figures.py` from the two Legatum data files named below, with a fixed seed (42).
 
-## Overview
+## Data (not redistributed)
 
-The Legatum Prosperity Index ranks 167 countries by an equal-weighted mean of twelve pillar scores. This repository audits how much of the 2023 ranking survives when the equal weights, the normalization method, and the aggregation rule are treated as uncertain modeling choices rather than fixed defaults.
+The Legatum data files are published by the Legatum Institute Foundation and are not included here, under its terms of use. Place them in `data/`, or point to them with environment variables.
 
-The analysis:
+| File | SHA-256 | Environment variable |
+| :-- | :-- | :-- |
+| `Dataset_Legatum_Prosperity_Index_2023.xlsx` | `8c789bd5ab881c12005f83e9b0c55ae81a68548dd18d3acb9fff9bec0eef631c` | `LPI_DATA_2023` |
+| `Legatum_Prosperity_Index_2026_Data_Sheet.xlsx` | `54621ff5d00d0cf4afe6bdbcc47008acff2086cd87cf55c3c8777f819eed1718` | `LPI_DATA_2026` |
 
-- Exactly replicates the published 2023 index from public pillar-score data (maximum deviation $5 \times 10^{-11}$, all 167 ranks reproduced).
-- Propagates weight uncertainty through 10,000 Monte Carlo draws under three priors (uniform, near-equal, and grid).
-- Runs a 14-input Sobol' global sensitivity analysis (Saltelli design, 16,384 evaluations) over the twelve pillar weights plus normalization and aggregation selectors.
-- Compares each pillar's nominal weight (1/12) to its realized importance (main-effect correlation ratio, η²).
+The 2023 edition has been withdrawn from the publisher's website. A copy can be checked without the authors: `pytest -q tests/` verifies the digest, that the equal-weighted mean of the twelve pillar scores reproduces all 167 published scores and ranks, and that the committed outputs regenerate.
 
-## Repository Structure
-├── data/           # Instructions for obtaining the Legatum pillar-score data (not redistributed)
-├── figures/        # Generated figures (fig1–fig5)
-├── outputs/        # Generated results (CSV/JSON), see below
-├── src/            # Analysis pipeline (analysis.py, figures.py)
-├── tests/          # Pytest suite: exact replication + Monte Carlo stability
-└── LICENSE
-├── requirements.txt
+## Run
 
-## Data
-
-The Legatum Prosperity Index dataset is distributed by the Prosperity Institute at https://index.prosperity.com and is **not redistributed** in this repository, per its terms of use. See `data/README.md` for instructions on obtaining the pillar-score file yourself and placing it in the expected location.
-
-## How to Run
-
-```bash
-pip install -r requirements.txt
-python src/analysis.py
-python src/figures.py
+```
+pip install -r requirements.txt    # Python 3.12.10
+python src/analysis.py      # all analyses; writes outputs/
+python src/figures.py       # figures/fig1..fig8 (300 dpi JPEG)
+pytest -q tests/            # reproducibility checks
 ```
 
-Both scripts read from a single fixed seed (42). The full pipeline completes in a few minutes on a laptop.
+## What is produced
 
-## What Gets Produced
-
-Running the pipeline populates `outputs/` with:
-
-| File | Contents |
-|---|---|
-| `rank_uncertainty.csv` | Per-country 90% rank intervals under each of the three weight priors |
-| `sobol_indices.csv` | First-order and total-effect Sobol' indices for all fourteen inputs |
-| `weights_vs_importance.csv` | Nominal vs. realized importance (η²) for each of the twelve pillars |
-| `fragility_by_tier.csv` | Rank-interval width broken out by published-rank tier |
-| `summary.json` | Headline statistics (replication deviation, $\bar{R}_S$ per prior, correlations) |
-
-and `figures/` with the five figures used in the paper (rank-shift comparison, per-country uncertainty band, interval-width-vs-rank scatter, Sobol' index bar chart, realized-vs-nominal importance chart).
-
-## Tests
-
-```bash
-pytest tests/
-```
-
-The test suite verifies exact replication of the published index (score deviation, rank reproduction) and the stability of the headline Monte Carlo statistic ($\bar{R}_S$) across runs.
-
-## Method Summary
-
-Three priors govern the weight-uncertainty exercise: a uniform prior over the weight simplex, a near-equal prior concentrated around 1/12, and a discrete grid prior mimicking how index designers typically adjust weights. A separate joint-perturbation exercise varies all fourteen inputs (twelve weights, one normalization selector, one aggregation selector) simultaneously via Saltelli sampling. Full methodological detail is in the accompanying paper.
+- `outputs/results.json`: every quantity reported in the manuscript.
+- `outputs/rank_uncertainty.csv`: per-country published score and rank, median simulated rank, 5th and 95th percentiles and width of the 90 percent rank interval (uniform prior).
+- `outputs/sobol_indices.csv`: first-order and total-effect Sobol' indices with 95 percent bootstrap half-widths at N = 8192 and N = 1024.
+- `outputs/realized_importance.csv`, `outputs/leverage.csv`: correlation ratios (5, 10, 20 bins and leave-one-out), squared correlations, standard deviations, exact leverage and its two terms.
+- `outputs/network_centrality.csv`, `outputs/network_edges.csv`: partial-correlation network, edge tests and centrality.
+- `outputs/country_profiles.csv`, `outputs/clusters.csv`: per-country Sobol' shares, local independence and cluster membership.
+- `outputs/eigenvalues.csv`: eigenvalues and parallel-analysis thresholds.
 
 ## License
 
-Code is released under the MIT License (see `LICENSE`). The Legatum Prosperity Index dataset itself is the property of the Prosperity Institute and is not included in or covered by this license.s
+Code is released under the MIT License. The Legatum data remain subject to the Legatum Institute Foundation's terms of use.

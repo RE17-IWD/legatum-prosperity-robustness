@@ -1,10 +1,11 @@
-# Legatum data is not redistributed (Prosperity Institute terms)
+# Legatum data is not redistributed (Legatum Institute Foundation terms)
 data/*.xlsx
 data/*.xls
-# intermediate artifacts:
-outputs/_*.pkl
+*.xlsx
+# intermediate artifacts
 outputs/_*.npy
+outputs/_*.pkl
 __pycache__/
 *.pyc
+.pytest_cache/
 .DS_Store
-.ipynb_checkpoints/

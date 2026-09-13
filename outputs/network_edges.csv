@@ -1,0 +1,67 @@
+a,b,partial_r,p,kept
+Safety and Security,Personal Freedom,0.07002994194304142,0.384041650892776,False
+Safety and Security,Governance,0.1793029380250234,0.024486615833366976,False
+Safety and Security,Social Capital,0.007649464634027849,0.9243710540431742,False
+Safety and Security,Investment Environment,-0.068637440404231,0.3935985188291382,False
+Safety and Security,Enterprise Conditions,0.03417421647413439,0.6713790626062062,False
+Safety and Security,Infrastructure and Market Access,-0.07086079512462679,0.378406797093229,False
+Safety and Security,Economic Quality,0.09579531970609792,0.23308672153166543,False
+Safety and Security,Living Conditions,0.14054867267881477,0.07912496897948218,False
+Safety and Security,Health,0.020029745137203597,0.8036734199679991,False
+Safety and Security,Education,0.05195200871623147,0.5187402834279649,False
+Safety and Security,Natural Environment,0.09540193141516413,0.23502321729632047,False
+Personal Freedom,Governance,0.5881736298029266,0.0,True
+Personal Freedom,Social Capital,0.1222941773012435,0.12719294335561382,False
+Personal Freedom,Investment Environment,0.017259583457288768,0.8303855830268771,False
+Personal Freedom,Enterprise Conditions,-0.19044344252238435,0.016731699194499683,False
+Personal Freedom,Infrastructure and Market Access,-0.03028597077498463,0.7069511029266335,False
+Personal Freedom,Economic Quality,-0.23494842080722964,0.002967045271444757,True
+Personal Freedom,Living Conditions,0.2534313309917808,0.0013042093059993931,True
+Personal Freedom,Health,-0.24310731557847343,0.0020803363452839285,True
+Personal Freedom,Education,-0.12211015815533191,0.12777195422434806,False
+Personal Freedom,Natural Environment,0.42779358729992994,1.3981543478536196e-08,True
+Governance,Social Capital,0.11029665741833772,0.1693371417920959,False
+Governance,Investment Environment,0.25784781924403566,0.001061524710006756,True
+Governance,Enterprise Conditions,0.4728765587853153,1.8212342745016485e-10,True
+Governance,Infrastructure and Market Access,-0.16876438580893938,0.03446910563115302,False
+Governance,Economic Quality,0.12240289418724556,0.12685181710239202,False
+Governance,Living Conditions,-0.08765797605128121,0.27544628879391286,False
+Governance,Health,0.10154064813568298,0.20607070745852818,False
+Governance,Education,0.09255148030284407,0.24939094371589832,False
+Governance,Natural Environment,-0.05687501019952909,0.4798381954493389,False
+Social Capital,Investment Environment,-0.03572524653440209,0.657384301376915,False
+Social Capital,Enterprise Conditions,-0.07540305312330048,0.34849795210290413,False
+Social Capital,Infrastructure and Market Access,-0.04687462652607612,0.5604822025051552,False
+Social Capital,Economic Quality,0.22182118889680802,0.005122000245101566,True
+Social Capital,Living Conditions,-0.02950964102316086,0.7141327466897276,False
+Social Capital,Health,0.15781762534236243,0.04827131948234453,False
+Social Capital,Education,0.05916983209262319,0.46225604414614585,False
+Social Capital,Natural Environment,0.16206202844385037,0.042455585581809174,False
+Investment Environment,Enterprise Conditions,0.4016866212431842,1.2758447498484315e-07,True
+Investment Environment,Infrastructure and Market Access,0.3444563253264724,8.318804674445346e-06,True
+Investment Environment,Economic Quality,0.15578289232702372,0.05128524970573012,False
+Investment Environment,Living Conditions,0.09042650643014122,0.2604885528884493,False
+Investment Environment,Health,0.011785948571456215,0.8837109724883172,False
+Investment Environment,Education,-0.022136994867357068,0.7835023451817127,False
+Investment Environment,Natural Environment,-0.03859911963762388,0.6317674899082348,False
+Enterprise Conditions,Infrastructure and Market Access,0.2739785083308308,0.00048463890800820586,True
+Enterprise Conditions,Economic Quality,0.06151390588342394,0.4446690989464397,False
+Enterprise Conditions,Living Conditions,-0.2737510557614316,0.0004902010682279467,True
+Enterprise Conditions,Health,-0.04219681118783313,0.6003065102148315,False
+Enterprise Conditions,Education,-0.042350842096816964,0.5989752813490832,False
+Enterprise Conditions,Natural Environment,-0.046815137600893356,0.5609806270562498,False
+Infrastructure and Market Access,Economic Quality,0.15743166879098658,0.048831445561455133,False
+Infrastructure and Market Access,Living Conditions,0.38106390806273455,6.356850958955107e-07,True
+Infrastructure and Market Access,Health,0.16810774393672784,0.03519096592919846,False
+Infrastructure and Market Access,Education,0.1428888829049165,0.07419282669261462,False
+Infrastructure and Market Access,Natural Environment,0.1883876349153515,0.01797708449947133,False
+Economic Quality,Living Conditions,0.06993399556657791,0.3846956083924422,False
+Economic Quality,Health,-0.1291885795743151,0.1069189895842435,False
+Economic Quality,Education,0.10103478267894726,0.20835512081611607,False
+Economic Quality,Natural Environment,0.07107581451211314,0.3769567597456862,False
+Living Conditions,Health,0.3481758095258367,6.505457106786849e-06,True
+Living Conditions,Education,0.4746609887022365,1.5110246387450843e-10,True
+Living Conditions,Natural Environment,-0.26130118734103697,0.000901326976930239,True
+Health,Education,0.13574929650419315,0.09006246482404823,False
+Health,Natural Environment,0.032105445858770815,0.6902210649203013,False
+Education,Natural Environment,0.1339084446617363,0.09456357948008387,False
