@@ -127,4 +127,32 @@ for yi, (name, val, err) in zip(y, items):
 ax.set_yticks(y); ax.set_yticklabels([n for n, _, _ in items]); ax.set_xlabel("Mean Absolute Rank Shift (Places)")
 ax.legend(handles=[Patch(color="#999999", label="Alternative Construction (Deterministic)"), Patch(color="#333333", label="Weight Prior (Bars: 5th–95th Percentile)")], frameon=False, loc="lower right", fontsize=7)
 save(fig, "fig8_structural")
+
+# Figure 9: cross-index comparison (outputs/cross_index.json, written by src/cross_index.py)
+if os.path.exists(f"{OUT}/cross_index.json"):
+    # drawn at 6.5 x 3.0 in so that it prints at 100 % across the 468 pt text width
+    CI = json.load(open(f"{OUT}/cross_index.json"))["indices"]
+    LAB = {"HDI": "HDI", "WGI": "WGI", "GII": "GII", "Legatum": "Legatum", "SDG": "SDG Index"}
+    FILL = {"pos": "#aaaaaa", "neg": "white", "focal": "black"}
+    def kind(key, r): return "neg" if r["n_negative"] > 0 else ("focal" if key == "Legatum" else "pos")
+    OFF = [{"WGI": (6, -3, "left"), "GII": (6, -2, "left"), "Legatum": (6, 3, "left"), "HDI": (-7, 0, "right"), "SDG": (-7, 0, "right")},
+           {"WGI": (6, 0, "left"), "GII": (-6, 0, "right"), "Legatum": (6, -5, "left"), "HDI": (6, 5, "left"), "SDG": (-7, 0, "right")}]
+    fig, axs = plt.subplots(1, 2, figsize=(6.5, 3.0))
+    panels = [(lambda r: r["dispersion_A"]["sd_pp"], lambda r: r["shift_E_A"]["mean"],
+               "SD of Weights (Percentage Points)", "Mean Absolute Rank Change (Places)"),
+              (lambda r: r["dispersion_A"]["cv"], lambda r: r["shift_E_A"]["per100"],
+               "CV of Weights (Dimensionless)", "Mean Absolute Rank Change\nper 100 Units (Places)")]
+    for p, (ax, (fx, fy, xl, yl), tag) in enumerate(zip(axs, panels, ["(a)", "(b)"])):
+        for key, r in CI.items():
+            ax.scatter(fx(r), fy(r), s=28, facecolors=FILL[kind(key, r)], edgecolors="black", linewidths=0.8, zorder=3)
+            dx, dy, ha = OFF[p][key]
+            ax.annotate(LAB[key], (fx(r), fy(r)), xytext=(dx, dy), textcoords="offset points", fontsize=7.5, ha=ha, va="center")
+        ax.set_xlabel(xl); ax.set_ylabel(yl); ax.text(0.03, 0.97, tag, transform=ax.transAxes, va="top")
+        ax.set_xlim(0, [8.5, 1.3][p]); ax.set_xticks([[0, 2, 4, 6, 8], [0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2]][p]); ax.set_ylim(0, [6.2, 5.5][p])
+    h = [plt.Line2D([], [], marker="o", ls="", mfc=FILL[k], mec="black", label=l) for k, l in
+         [("focal", "Legatum (All Loadings Positive)"), ("pos", "Other Index, All Loadings Positive"), ("neg", "Some Loadings Negative")]]
+    axs[0].legend(handles=h, frameon=False, loc="upper left", bbox_to_anchor=(0.0, 0.90), fontsize=7)
+    save(fig, "fig9_cross_index")
+else:
+    print("WARNING: outputs/cross_index.json not found; Figure 9 skipped (run src/cross_index.py first)")
 print("figures written to", FIG, sorted(os.listdir(FIG)))
