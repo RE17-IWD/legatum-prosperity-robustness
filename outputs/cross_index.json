@@ -1,0 +1,604 @@
+{
+ "seed": 42,
+ "files": {
+  "LPI": {
+   "file": "Dataset_Legatum_Prosperity_Index_2023.xlsx",
+   "sha256": "8c789bd5ab881c12005f83e9b0c55ae81a68548dd18d3acb9fff9bec0eef631c"
+  },
+  "HDI": {
+   "file": "HDR25_Composite_indices_complete_time_series.csv",
+   "sha256": "61ed82e5b66c88dfca8ff9fac775c63981ecab6a254862af97acacc41c143117"
+  },
+  "GII": {
+   "file": "wipo-pub-2000-2024-tech1.xlsx",
+   "sha256": "f7ab52221b82d15645eacdaf6f0ca0c1ce7b3686f814eb15f9bed8c7d9d88126"
+  },
+  "WGI": {
+   "file": "WGI_2026_Governance_Estimates_and_Scores_1996-2025.xlsx",
+   "sha256": "8e4754bda8b2be0b36d172c18a4caa634cb36fddd54145d16ab7316d22b3542c"
+  },
+  "SDG": {
+   "file": "database_2026.xlsx",
+   "sha256": "ac34ef41945cf3cb69d420841e66eef6bf4d43dc5a76186e0c5a2ed658c7b892"
+  }
+ },
+ "indices": {
+  "HDI": {
+   "index": "Human Development Index",
+   "short": "HDI",
+   "edition": "2023 (HDR 2025)",
+   "n": 193,
+   "k": 3,
+   "official_rule": "Geometric mean of 3 dimension indices",
+   "equal_weight": 0.3333333333333333,
+   "pc1_share": 0.8944880339949997,
+   "pc2_share": 0.06933145196431621,
+   "retained_pa": 1,
+   "retained_kaiser": 1,
+   "loadings": {
+    "Health (life expectancy index)": 0.9336189330849305,
+    "Education index": 0.9398622458758886,
+    "Income index": 0.963576021156341
+   },
+   "loading_min": 0.9336189330849305,
+   "loading_max": 0.963576021156341,
+   "n_negative": 0,
+   "weights_A": {
+    "Health (life expectancy index)": 0.44081246165500226,
+    "Education index": 0.2759732751379912,
+    "Income index": 0.28321426320700654
+   },
+   "weights_B": {
+    "Health (life expectancy index)": 0.32908005275550156,
+    "Education index": 0.33128068261615445,
+    "Income index": 0.3396392646283441
+   },
+   "dispersion_A": {
+    "min": 0.2759732751379912,
+    "max": 0.44081246165500226,
+    "sd_pp": 7.605669046022288,
+    "cv": 0.22817007138066864
+   },
+   "dispersion_B": {
+    "min": 0.32908005275550156,
+    "max": 0.3396392646283441,
+    "sd_pp": 0.4548572674949511,
+    "cv": 0.013645718024848534
+   },
+   "shift_E_A": {
+    "mean": 2.393782383419689,
+    "max": 11.0,
+    "per100": 1.2403017530671965,
+    "spearman": 0.998312389829603
+   },
+   "shift_E_B": {
+    "mean": 0.13471502590673576,
+    "max": 1.0,
+    "per100": 0.06980053155789417,
+    "spearman": 0.9999782997703113
+   },
+   "check_A_equals_pc1_score": 0.9999999999999999,
+   "rank_changing_share_A": 0.0024770355907738693,
+   "rank_changing_share_B": 7.768906174299806e-06,
+   "sigma_ratio": 1.6079827664642476,
+   "official_vs_E": {
+    "mean": 0.9378238341968912,
+    "max": 5.5,
+    "per100": 0.4859190850761095,
+    "spearman": 0.9996953567348911
+   },
+   "official_vs_A": {
+    "mean": 3.098445595854922,
+    "max": 13.5,
+    "per100": 1.605412225831566,
+    "spearman": 0.9974201293369637
+   },
+   "max_abs_official_minus_E": 0.033351934987636334,
+   "max_abs_official_minus_rebuilt": 0.0004999098757210163,
+   "rebuilt_rank_spearman": 0.9999816380986069,
+   "largest_shifts_A": [
+    {
+     "unit": "Maldives",
+     "rank_E": 91.0,
+     "rank_A": 80.0
+    },
+    {
+     "unit": "Morocco",
+     "rank_E": 120.0,
+     "rank_A": 110.0
+    },
+    {
+     "unit": "Palau",
+     "rank_E": 85.0,
+     "rank_A": 94.0
+    },
+    {
+     "unit": "Saint Vincent and the Grenadines",
+     "rank_E": 78.0,
+     "rank_A": 87.0
+    },
+    {
+     "unit": "Fiji",
+     "rank_E": 112.0,
+     "rank_A": 120.0
+    }
+   ]
+  },
+  "WGI": {
+   "index": "Worldwide Governance Indicators",
+   "short": "WGI",
+   "edition": "2025 (2026 release)",
+   "n": 206,
+   "k": 6,
+   "official_rule": "No official composite",
+   "equal_weight": 0.16666666666666666,
+   "pc1_share": 0.8514452400664525,
+   "pc2_share": 0.07243839699026905,
+   "retained_pa": 1,
+   "retained_kaiser": 1,
+   "loadings": {
+    "Voice and Accountability": 0.8775831695302451,
+    "Political Stability": 0.8256009512611715,
+    "Government Effectiveness": 0.9490951454445695,
+    "Regulatory Quality": 0.9306874718143239,
+    "Rule of Law": 0.9823591376356894,
+    "Control of Corruption": 0.9617234787805122
+   },
+   "loading_min": 0.8256009512611715,
+   "loading_max": 0.9823591376356894,
+   "n_negative": 0,
+   "weights_A": {
+    "Voice and Accountability": 0.14789844635859895,
+    "Political Stability": 0.15606125365330514,
+    "Government Effectiveness": 0.15633030334976736,
+    "Regulatory Quality": 0.1924104020820332,
+    "Rule of Law": 0.19091817233575417,
+    "Control of Corruption": 0.15638142222054108
+   },
+   "weights_B": {
+    "Voice and Accountability": 0.15877968754179003,
+    "Political Stability": 0.14937462980930102,
+    "Government Effectiveness": 0.17171823238335804,
+    "Regulatory Quality": 0.168387762099902,
+    "Rule of Law": 0.17773663208594773,
+    "Control of Corruption": 0.1740030560797011
+   },
+   "dispersion_A": {
+    "min": 0.14789844635859895,
+    "max": 0.1924104020820332,
+    "sd_pp": 1.792680943450257,
+    "cv": 0.10756085660701542
+   },
+   "dispersion_B": {
+    "min": 0.14937462980930102,
+    "max": 0.17773663208594773,
+    "sd_pp": 0.971310290343967,
+    "cv": 0.058278617420638015
+   },
+   "shift_E_A": {
+    "mean": 0.9805825242718447,
+    "max": 6.0,
+    "per100": 0.47601093411254597,
+    "spearman": 0.9996801504528342
+   },
+   "shift_E_B": {
+    "mean": 0.7281553398058253,
+    "max": 6.0,
+    "per100": 0.3534734659251579,
+    "spearman": 0.9998050702330578
+   },
+   "check_A_equals_pc1_score": 1.0,
+   "rank_changing_share_A": 0.00026320480522717,
+   "rank_changing_share_B": 0.00018852614547008759,
+   "sigma_ratio": 1.2714220513664125,
+   "largest_shifts_A": [
+    {
+     "unit": "Timor-Leste",
+     "rank_E": 114.0,
+     "rank_A": 120.0
+    },
+    {
+     "unit": "Bhutan",
+     "rank_E": 44.0,
+     "rank_A": 49.0
+    },
+    {
+     "unit": "Thailand",
+     "rank_E": 118.0,
+     "rank_A": 113.0
+    },
+    {
+     "unit": "United Arab Emirates",
+     "rank_E": 57.0,
+     "rank_A": 53.0
+    },
+    {
+     "unit": "Bahrain",
+     "rank_E": 98.0,
+     "rank_A": 94.0
+    }
+   ]
+  },
+  "GII": {
+   "index": "Global Innovation Index",
+   "short": "GII",
+   "edition": "2024",
+   "n": 133,
+   "k": 7,
+   "official_rule": "Mean of input sub-index (5 pillars) and output sub-index (2 pillars)",
+   "equal_weight": 0.14285714285714285,
+   "pc1_share": 0.8128486079185443,
+   "pc2_share": 0.06700665362740472,
+   "retained_pa": 1,
+   "retained_kaiser": 1,
+   "loadings": {
+    "Institutions": 0.8120886206670654,
+    "Human capital and research": 0.9347046558881353,
+    "Infrastructure": 0.8926393139130414,
+    "Market sophistication": 0.8711608220486422,
+    "Business sophistication": 0.9491500119882164,
+    "Knowledge and technology outputs": 0.924947819675543,
+    "Creative outputs": 0.9190425435628788
+   },
+   "loading_min": 0.8120886206670654,
+   "loading_max": 0.9491500119882164,
+   "n_negative": 0,
+   "weights_A": {
+    "Institutions": 0.09949533157053446,
+    "Human capital and research": 0.15463781094648119,
+    "Infrastructure": 0.16565956507353996,
+    "Market sophistication": 0.13473449015609565,
+    "Business sophistication": 0.15154791292223674,
+    "Knowledge and technology outputs": 0.15550623811303177,
+    "Creative outputs": 0.1384186512180803
+   },
+   "weights_B": {
+    "Institutions": 0.12882660467769527,
+    "Human capital and research": 0.14827793929139274,
+    "Infrastructure": 0.1416048557838242,
+    "Market sophistication": 0.1381975907266988,
+    "Business sophistication": 0.15056949483394555,
+    "Knowledge and technology outputs": 0.14673015244932103,
+    "Creative outputs": 0.14579336223712236
+   },
+   "dispersion_A": {
+    "min": 0.09949533157053446,
+    "max": 0.16565956507353996,
+    "sd_pp": 2.0213814468859,
+    "cv": 0.141496701282013
+   },
+   "dispersion_B": {
+    "min": 0.12882660467769527,
+    "max": 0.15056949483394555,
+    "sd_pp": 0.6893295346301601,
+    "cv": 0.04825306742411121
+   },
+   "shift_E_A": {
+    "mean": 1.3834586466165413,
+    "max": 8.0,
+    "per100": 1.0401944711402566,
+    "spearman": 0.9984901194641964
+   },
+   "shift_E_B": {
+    "mean": 0.6616541353383458,
+    "max": 4.0,
+    "per100": 0.49748431228447054,
+    "spearman": 0.9995715203884881
+   },
+   "check_A_equals_pc1_score": 1.0,
+   "rank_changing_share_A": 0.0013813331710517528,
+   "rank_changing_share_B": 0.00018113706354012585,
+   "sigma_ratio": 1.5147509303584206,
+   "official_vs_E": {
+    "mean": 3.398496240601504,
+    "max": 15.0,
+    "per100": 2.5552603312793263,
+    "spearman": 0.9926393323879577
+   },
+   "official_vs_A": {
+    "mean": 2.857142857142857,
+    "max": 14.0,
+    "per100": 2.1482277121374866,
+    "spearman": 0.9946746105426388
+   },
+   "max_abs_official_minus_E": 6.568406357233126,
+   "max_abs_official_minus_rebuilt": 8.171241461241152e-14,
+   "rebuilt_rank_spearman": 1.0,
+   "largest_shifts_A": [
+    {
+     "unit": "Brunei Darussalam",
+     "rank_E": 73.0,
+     "rank_A": 81.0
+    },
+    {
+     "unit": "Iran (Islamic Republic of)",
+     "rank_E": 76.0,
+     "rank_A": 70.0
+    },
+    {
+     "unit": "Lebanon",
+     "rank_E": 99.0,
+     "rank_A": 93.0
+    },
+    {
+     "unit": "Azerbaijan",
+     "rank_E": 91.0,
+     "rank_A": 96.0
+    },
+    {
+     "unit": "Bahrain",
+     "rank_E": 57.0,
+     "rank_A": 62.0
+    }
+   ]
+  },
+  "Legatum": {
+   "index": "Legatum Prosperity Index",
+   "short": "Legatum",
+   "edition": "2023",
+   "n": 167,
+   "k": 12,
+   "official_rule": "Equal-weight arithmetic mean of 12 pillars",
+   "equal_weight": 0.08333333333333333,
+   "pc1_share": 0.7446392108937804,
+   "pc2_share": 0.08922972241315075,
+   "retained_pa": 1,
+   "retained_kaiser": 2,
+   "loadings": {
+    "Economic Quality": 0.9137463087685176,
+    "Education": 0.9099382981294322,
+    "Enterprise Conditions": 0.8891250256696919,
+    "Governance": 0.9211268390124469,
+    "Health": 0.8516026043624155,
+    "Infrastructure and Market Access": 0.9472995396848443,
+    "Investment Environment": 0.9515670743227864,
+    "Living Conditions": 0.8921798328772229,
+    "Natural Environment": 0.694901265956941,
+    "Personal Freedom": 0.7469471567198905,
+    "Safety and Security": 0.8194454507942507,
+    "Social Capital": 0.7728879005091808
+   },
+   "loading_min": 0.694901265956941,
+   "loading_max": 0.9515670743227864,
+   "n_negative": 0,
+   "weights_A": {
+    "Economic Quality": 0.09599759138388278,
+    "Education": 0.06522964847909835,
+    "Enterprise Conditions": 0.09741349735192094,
+    "Governance": 0.07321921581873694,
+    "Health": 0.10758807858735271,
+    "Infrastructure and Market Access": 0.0843192509893854,
+    "Investment Environment": 0.08017118282396447,
+    "Living Conditions": 0.06371958558010792,
+    "Natural Environment": 0.1081890643195083,
+    "Personal Freedom": 0.052912248527242176,
+    "Safety and Security": 0.06589898414878176,
+    "Social Capital": 0.10534165199001834
+   },
+   "weights_B": {
+    "Economic Quality": 0.08862059267416775,
+    "Education": 0.08825126898278113,
+    "Enterprise Conditions": 0.0862326730955299,
+    "Governance": 0.08933640072525376,
+    "Health": 0.08259352382301223,
+    "Infrastructure and Market Access": 0.0918747860770889,
+    "Investment Environment": 0.09228867715959481,
+    "Living Conditions": 0.08652894660453217,
+    "Natural Environment": 0.06739568898738446,
+    "Personal Freedom": 0.07244341136000204,
+    "Safety and Security": 0.07947473036734758,
+    "Social Capital": 0.07495930014330547
+   },
+   "dispersion_A": {
+    "min": 0.052912248527242176,
+    "max": 0.1081890643195083,
+    "sd_pp": 1.8493712021734707,
+    "cv": 0.22192454426081648
+   },
+   "dispersion_B": {
+    "min": 0.06739568898738446,
+    "max": 0.09228867715959481,
+    "sd_pp": 0.7735794553399894,
+    "cv": 0.09282953464079872
+   },
+   "shift_E_A": {
+    "mean": 1.8083832335329342,
+    "max": 10.0,
+    "per100": 1.0828642116963678,
+    "spearman": 0.9984334257474725
+   },
+   "shift_E_B": {
+    "mean": 1.089820359281437,
+    "max": 7.0,
+    "per100": 0.6525870414858904,
+    "spearman": 0.9994305708720254
+   },
+   "check_A_equals_pc1_score": 1.0,
+   "rank_changing_share_A": 0.001418283048198665,
+   "rank_changing_share_B": 0.0005861348184544865,
+   "sigma_ratio": 2.1978291183554393,
+   "official_vs_E": {
+    "mean": 0.0,
+    "max": 0.0,
+    "per100": 0.0,
+    "spearman": 1.0
+   },
+   "official_vs_A": {
+    "mean": 1.8083832335329342,
+    "max": 10.0,
+    "per100": 1.0828642116963678,
+    "spearman": 0.9984334257474725
+   },
+   "max_abs_official_minus_E": 5.000799774279585e-11,
+   "largest_shifts_A": [
+    {
+     "unit": "Lesotho",
+     "rank_E": 132.0,
+     "rank_A": 142.0
+    },
+    {
+     "unit": "Myanmar",
+     "rank_E": 143.0,
+     "rank_A": 133.0
+    },
+    {
+     "unit": "Thailand",
+     "rank_E": 64.0,
+     "rank_A": 54.0
+    },
+    {
+     "unit": "Bosnia and Herzegovina",
+     "rank_E": 72.0,
+     "rank_A": 80.0
+    },
+    {
+     "unit": "Bahrain",
+     "rank_E": 62.0,
+     "rank_A": 55.0
+    }
+   ]
+  },
+  "SDG": {
+   "index": "SDG Index",
+   "short": "SDG",
+   "edition": "2026",
+   "n": 114,
+   "k": 17,
+   "official_rule": "Equal-weight arithmetic mean of 17 goals",
+   "equal_weight": 0.058823529411764705,
+   "pc1_share": 0.5643971150733548,
+   "pc2_share": 0.08368742731362777,
+   "retained_pa": 1,
+   "retained_kaiser": 3,
+   "loadings": {
+    "SDG 1": 0.8489279851990238,
+    "SDG 2": 0.8416145710344585,
+    "SDG 3": 0.9393623659779297,
+    "SDG 4": 0.8564808836383871,
+    "SDG 5": 0.7535738835962005,
+    "SDG 6": 0.8743637915281149,
+    "SDG 7": 0.8505082711078716,
+    "SDG 8": 0.777151632725359,
+    "SDG 9": 0.9298608663464553,
+    "SDG 10": 0.3740838924325808,
+    "SDG 11": 0.9031212594142204,
+    "SDG 12": -0.8808040287151322,
+    "SDG 13": -0.6399706806026569,
+    "SDG 14": -0.11859551939048421,
+    "SDG 15": 0.1649966249652098,
+    "SDG 16": 0.8495928913388994,
+    "SDG 17": 0.3484225851701786
+   },
+   "loading_min": -0.8808040287151322,
+   "loading_max": 0.9393623659779297,
+   "n_negative": 3,
+   "weights_A": {
+    "SDG 1": 0.06399088742702529,
+    "SDG 2": 0.14242490604263555,
+    "SDG 3": 0.10772427935034352,
+    "SDG 4": 0.08077958222236967,
+    "SDG 5": 0.08799077361142676,
+    "SDG 6": 0.128368361889748,
+    "SDG 7": 0.08956534784364395,
+    "SDG 8": 0.11026196990373395,
+    "SDG 9": 0.07414569465431223,
+    "SDG 10": 0.030134506157644368,
+    "SDG 11": 0.09590032286464828,
+    "SDG 12": -0.11086671497356954,
+    "SDG 13": -0.07909031929333275,
+    "SDG 14": -0.022136712439154597,
+    "SDG 15": 0.022209170194714776,
+    "SDG 16": 0.10821412891738534,
+    "SDG 17": 0.07038381562642516
+   },
+   "weights_B": {
+    "SDG 1": 0.0978851844491586,
+    "SDG 2": 0.09704191516491686,
+    "SDG 3": 0.1083126720540269,
+    "SDG 4": 0.09875606733881799,
+    "SDG 5": 0.0868904310824311,
+    "SDG 6": 0.10081804640864797,
+    "SDG 7": 0.09806739846538486,
+    "SDG 8": 0.08960905075646929,
+    "SDG 9": 0.10721710675262806,
+    "SDG 10": 0.043133541888877386,
+    "SDG 11": 0.10413391076628514,
+    "SDG 12": -0.1015606344914283,
+    "SDG 13": -0.0737914749013232,
+    "SDG 14": -0.013674592536444354,
+    "SDG 15": 0.019024847042145528,
+    "SDG 16": 0.09796185109377138,
+    "SDG 17": 0.04017467866563486
+   },
+   "dispersion_A": {
+    "min": -0.11086671497356954,
+    "max": 0.14242490604263555,
+    "sd_pp": 6.854933710608568,
+    "cv": 1.1653387308034566
+   },
+   "dispersion_B": {
+    "min": -0.1015606344914283,
+    "max": 0.1083126720540269,
+    "sd_pp": 6.358867152893814,
+    "cv": 1.0810074159919485
+   },
+   "shift_E_A": {
+    "mean": 5.666666666666667,
+    "max": 41.0,
+    "per100": 4.97076023391813,
+    "spearman": 0.9688787185354694
+   },
+   "shift_E_B": {
+    "mean": 5.771929824561403,
+    "max": 42.0,
+    "per100": 5.063096337334564,
+    "spearman": 0.9676798768757215
+   },
+   "check_A_equals_pc1_score": 1.0,
+   "rank_changing_share_A": 0.19945273765727115,
+   "rank_changing_share_B": 0.21802277371154813,
+   "sigma_ratio": 2.679903930742239,
+   "official_vs_E": {
+    "mean": 0.0,
+    "max": 0.0,
+    "per100": 0.0,
+    "spearman": 1.0
+   },
+   "official_vs_A": {
+    "mean": 5.666666666666667,
+    "max": 41.0,
+    "per100": 4.97076023391813,
+    "spearman": 0.9688787185354694
+   },
+   "max_abs_official_minus_E": 1.4210854715202004e-14,
+   "n_ranked": 169,
+   "largest_shifts_A": [
+    {
+     "unit": "Qatar",
+     "rank_E": 74.0,
+     "rank_A": 33.0
+    },
+    {
+     "unit": "United Arab Emirates",
+     "rank_E": 52.0,
+     "rank_A": 28.0
+    },
+    {
+     "unit": "Barbados",
+     "rank_E": 64.0,
+     "rank_A": 42.0
+    },
+    {
+     "unit": "Mauritius",
+     "rank_E": 72.0,
+     "rank_A": 51.0
+    },
+    {
+     "unit": "Panama",
+     "rank_E": 66.0,
+     "rank_A": 50.0
+    }
+   ]
+  }
+ }
+}

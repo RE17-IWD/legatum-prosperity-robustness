@@ -1,6 +1,10 @@
 # Legatum data is not redistributed (Legatum Institute Foundation terms)
 data/*.xlsx
 data/*.xls
+data/*.csv
+# external index files (UNDP, WIPO, World Bank, SDSN) are not redistributed, wherever they are placed
+/HDR25_Composite_indices_complete_time_series.csv
+ext_data/
 *.xlsx
 # intermediate artifacts
 outputs/_*.npy
